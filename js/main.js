@@ -1,112 +1,74 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const header = document.querySelector('.header');
-  const navToggle = document.querySelector('.nav-toggle');
-  const mobileMenu = document.querySelector('.mobile-menu');
+// CraftStand.ma - Shared JavaScript
 
-  window.addEventListener('scroll', () => {
-    header.classList.toggle('scrolled', window.scrollY > 50);
-  });
-
-  if (navToggle && mobileMenu) {
-    navToggle.addEventListener('click', () => {
-      navToggle.classList.toggle('active');
-      mobileMenu.classList.toggle('active');
-      document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
-    });
-
-    mobileMenu.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => {
-        navToggle.classList.remove('active');
-        mobileMenu.classList.remove('active');
-        document.body.style.overflow = '';
-      });
-    });
+// ===== i18n TRANSLATIONS =====
+const translations = {
+  en: {
+    'header.subtitle': 'DESIGN 3D & FABRICATION SUR-MESURE',
+    'nav.home': 'Home', 'nav.services': 'Services', 'nav.portfolio': 'Portfolio', 'nav.contact': 'Contact', 'nav.creation3d': 'Création 3D', 'nav.cta': 'Get Quote',
+    'footer.rights': 'All rights reserved.',
+    'contact.form.submit': 'Send Request',
+  },
+  fr: {
+    'header.subtitle': 'DESIGN 3D & FABRICATION SUR-MESURE',
+    'nav.home': 'Accueil', 'nav.services': 'Services', 'nav.portfolio': 'Portfolio', 'nav.contact': 'Contact', 'nav.creation3d': 'Création 3D', 'nav.cta': 'Demander un Devis',
+    'footer.rights': 'Tous droits réservés.',
+    'contact.form.submit': 'Envoyer la Demande',
+  },
+  ar: {
+    'header.subtitle': 'تصميم ثلاثي الأبعاد وتصنيع حسب الطلب',
+    'nav.home': 'الرئيسية', 'nav.services': 'الخدمات', 'nav.portfolio': 'أعمالنا', 'nav.contact': 'اتصل بنا', 'nav.creation3d': 'إنشاء ثلاثي الأبعاد', 'nav.cta': 'احصل على عرض سعر',
+    'footer.rights': 'جميع الحقوق محفوظة.',
+    'contact.form.submit': 'إرسال الطلب',
   }
+};
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-      }
-    });
-  }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+let currentLang = 'en';
 
-  document.querySelectorAll('.fade-in, .fade-in-left, .fade-in-right').forEach(el => {
-    observer.observe(el);
-  });
+function setLang(lang) {
+  currentLang = lang;
+  const isRTL = lang === 'ar';
+  document.documentElement.lang = lang;
+  document.documentElement.dir = isRTL ? 'rtl' : 'ltr';
+  document.body.dir = isRTL ? 'rtl' : 'ltr';
+  document.body.className = isRTL ? 'font-cairo' : 'font-inter';
 
-  const filterBtns = document.querySelectorAll('.filter-btn');
-  const portfolioCards = document.querySelectorAll('.portfolio-card');
-
-  filterBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      filterBtns.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      const filter = btn.dataset.filter;
-
-      portfolioCards.forEach(card => {
-        if (filter === 'all' || card.dataset.category === filter) {
-          card.classList.remove('hidden');
-          card.style.animation = 'fadeInUp 0.5s ease forwards';
-        } else {
-          card.classList.add('hidden');
-        }
-      });
-    });
-  });
-
-  const contactForm = document.getElementById('contactForm');
-  if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const formData = new FormData(contactForm);
-      const data = Object.fromEntries(formData.entries());
-
-      const checkboxes = contactForm.querySelectorAll('input[type="checkbox"]:checked');
-      data.services = Array.from(checkboxes).map(cb => cb.value);
-
-      const message = encodeURIComponent(
-        `Bonjour CraftStand.ma!\n\n` +
-        `Nom: ${data.name || 'Non spécifié'}\n` +
-        `Tél: ${data.phone || 'Non spécifié'}\n` +
-        `Email: ${data.email || 'Non spécifié'}\n` +
-        `Type de projet: ${data.projectType || 'Non spécifié'}\n` +
-        `Ville: ${data.city || 'Non spécifié'}\n` +
-        `Date souhaitée: ${data.date || 'Non spécifié'}\n` +
-        `Heure: ${data.time || 'Non spécifié'}\n` +
-        `Services: ${data.services.join(', ') || 'Aucun'}\n` +
-        `Message: ${data.message || 'Aucun message'}`
-      );
-
-      window.open(`https://wa.me/212663558868?text=${message}`, '_blank');
-    });
-  }
-
-  const urlParams = new URLSearchParams(window.location.search);
-  const service = urlParams.get('service');
-  if (service) {
-    const select = document.querySelector('select[name="projectType"]');
-    if (select) {
-      select.value = service;
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (translations[lang] && translations[lang][key]) {
+      el.innerHTML = translations[lang][key];
     }
-  }
-
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-      const target = document.querySelector(this.getAttribute('href'));
-      if (target) {
-        e.preventDefault();
-        target.scrollIntoView({ behavior: 'smooth' });
-      }
-    });
   });
-});
 
-const style = document.createElement('style');
-style.textContent = `
-  @keyframes fadeInUp {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-`;
-document.head.appendChild(style);
+  document.querySelectorAll('.lang-btn').forEach(btn => {
+    if (btn.dataset.lang === lang) {
+      btn.classList.add('bg-gold', 'text-dark');
+      btn.classList.remove('text-slate-400', 'hover:text-gold');
+    } else {
+      btn.classList.remove('bg-gold', 'text-dark');
+      btn.classList.add('text-slate-400', 'hover:text-gold');
+    }
+  });
+}
+
+// ===== MOBILE NAV =====
+function toggleMobileNav() {
+  document.getElementById('mobileNav').classList.toggle('hidden');
+}
+
+// ===== SCROLL ANIMATIONS =====
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+}, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+// ===== TOAST =====
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  if (!t) return;
+  t.textContent = msg;
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 3000);
+}
+
+// ===== INIT =====
+setLang('en');

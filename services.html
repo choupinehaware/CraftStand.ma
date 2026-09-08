@@ -1,342 +1,809 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nos Services | CraftStand.ma - Kiosques, Stands & Booths Sur-Mesure</title>
-  <meta name="description" content="Services CraftStand.ma : Kiosques Street Food, Pop-Up Stores, Exhibition Booths. Fabrication sur-mesure bois, métal, aluminium, électricité, plomberie, climatisation, caméras CCTV.">
-  <meta name="keywords" content="Fabrication Stand Rabat, Kiosque Street Food Maroc, Pop-Up Store, Stand Salon, Agencement Commercial Rabat, Design 3D Stand Maroc">
-  <meta name="robots" content="index, follow">
+  <title>Services Stands d'Exposition au Maroc | Fabrication Sur-Mesure | CraftStand.ma</title>
+  <meta name="description" content="Services complets de fabrication de stands d'exposition au Maroc : design 3D, fabrication bois/métal/aluminium, installation et signalétique. Rabat, Casablanca, Marrakech. +212 663-558868">
+  <meta name="keywords" content="fabrication stande maroc, stande sur mesure, stande bois, stande metal, stande aluminium, stande exhibition, stande rabat, stande casablanca, stande marrakech, stande fes, stande tangier, stande agadir, stande meknes, stande oujda, stande kenitra, stande tetouan, stande street food, kiosque, pop-up store, booth, stande 1er au maroc, stande maroc 1er, stande marocain, fabricant stande maroc">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta name="author" content="CraftStand.ma">
   <link rel="canonical" href="https://craftstand.ma/services.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Services Stands d'Exposition au Maroc | CraftStand.ma">
+  <meta property="og:description" content="Fabrication de stands d'exposition sur mesure au Maroc. Design 3D, fabrication multi-matériaux, installation et signalétique.">
+  <meta property="og:url" content="https://craftstand.ma/services.html">
+  <meta property="og:image" content="https://craftstand.ma/img/file_00000000638c81f4a1fedb11e724ab90.png">
+  <meta property="og:locale" content="fr_MA">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="ar_MA">
+  <meta property="og:site_name" content="CraftStand.ma">
+
+  <!-- Geo Meta Tags -->
+  <meta name="geo.region" content="MA">
+  <meta name="geo.placename" content="Rabat">
+  <meta name="geo.position" content="34.0209;-6.8416">
+  <meta name="ICBM" content="34.0209, -6.8416">
+
+  <!-- AI Crawler Meta Tags -->
+  <meta name="googlebot" content="index, follow, max-image-preview:large">
+  <meta name="bingbot" content="index, follow">
+  <meta name="chatgpt" content="index, follow">
+  <meta name="anthropic-ai" content="index, follow">
+  <meta name="perplexity" content="index, follow">
+  <meta name="youbot" content="index, follow">
+
+  <!-- JSON-LD Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Service",
-    "serviceType": "Stand & Kiosk Fabrication",
+    "name": "Fabrication de Stands d'Exposition au Maroc",
+    "description": "Services complets de conception, fabrication et installation de stands d'exposition sur mesure au Maroc.",
     "provider": {
       "@type": "LocalBusiness",
       "name": "CraftStand.ma",
+      "url": "https://craftstand.ma",
       "telephone": "+212663558868",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Rabat",
         "addressCountry": "MA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 34.0209,
+        "longitude": -6.8416
       }
     },
-    "areaServed": "Morocco",
-    "description": "Conception 3D, Fabrication et Installation de Stands et Kiosques sur-mesure"
+    "areaServed": [
+      {"@type": "City", "name": "Rabat"},
+      {"@type": "City", "name": "Casablanca"},
+      {"@type": "City", "name": "Marrakech"},
+      {"@type": "City", "name": "Fès"},
+      {"@type": "City", "name": "Tanger"},
+      {"@type": "City", "name": "Agadir"},
+      {"@type": "City", "name": "Meknès"},
+      {"@type": "City", "name": "Oujda"},
+      {"@type": "City", "name": "Kénitra"},
+      {"@type": "City", "name": "Tétouan"}
+    ],
+    "serviceType": ["Design 3D", "Fabrication", "Installation", "Signalétique"]
   }
   </script>
-  <link rel="stylesheet" href="css/style.css">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            dark: '#0F172A',
+            'dark-light': '#1E293B',
+            gold: '#F59E0B',
+            'gold-dark': '#D97706',
+          },
+          fontFamily: {
+            inter: ['Inter', 'sans-serif'],
+            cairo: ['Cairo', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+    body { font-family: 'Inter', sans-serif; background: #0F172A; color: #fff; overflow-x: hidden; }
+    body[dir="rtl"] { font-family: 'Cairo', sans-serif; }
+
+    .glass { background: rgba(15, 23, 42, 0.85); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); }
+    .glass-card { background: rgba(30, 41, 59, 0.6); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.06); }
+
+    .gold-gradient { background: linear-gradient(135deg, #FBBF24, #F59E0B, #D97706); }
+    .gold-text { background: linear-gradient(135deg, #FBBF24, #F59E0B); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+
+    .fade-up { opacity: 0; transform: translateY(30px); transition: all 0.7s cubic-bezier(0.16, 1, 0.3, 1); }
+    .fade-up.visible { opacity: 1; transform: translateY(0); }
+
+    .section-divider { width: 60px; height: 3px; background: linear-gradient(90deg, #F59E0B, transparent); border-radius: 2px; }
+
+    .toast {
+      position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%) translateY(20px);
+      background: rgba(245,158,11,0.15); border: 1px solid rgba(245,158,11,0.3);
+      border-radius: 10px; padding: 0.6rem 1.5rem; font-size: 0.85rem; color: #F59E0B;
+      font-weight: 600; z-index: 999; opacity: 0; pointer-events: none; transition: all 0.4s;
+    }
+    .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+    .nav-active { color: #F59E0B !important; }
+
+    .service-icon {
+      width: 64px; height: 64px; min-width: 64px;
+      background: linear-gradient(135deg, #FBBF24, #F59E0B, #D97706);
+      border-radius: 16px; display: flex; align-items: center; justify-content: center;
+    }
+    .service-icon svg { width: 32px; height: 32px; }
+
+    .city-tag {
+      display: inline-flex; align-items: center; gap: 4px;
+      padding: 4px 12px; border-radius: 9999px; font-size: 0.75rem; font-weight: 600;
+      background: rgba(245,158,11,0.1); border: 1px solid rgba(245,158,11,0.2); color: #F59E0B;
+    }
+
+    .service-card {
+      background: rgba(30, 41, 59, 0.6); backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,0.06); border-radius: 20px; padding: 2rem;
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .service-card:hover {
+      border-color: rgba(245,158,11,0.3);
+      transform: translateY(-4px);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.3), 0 0 40px rgba(245,158,11,0.05);
+    }
+
+    .check-item {
+      display: flex; align-items: flex-start; gap: 0.5rem; padding: 0.35rem 0;
+      font-size: 0.9rem; color: #94A3B8;
+    }
+    .check-item svg { flex-shrink: 0; margin-top: 2px; }
+  </style>
 </head>
-<body>
+<body class="font-inter" dir="ltr">
+
+  <!-- TOAST -->
+  <div class="toast" id="toast"></div>
 
   <!-- HEADER -->
-  <header class="header">
-    <div class="header-inner">
-        <a href="index.html" class="logo-link footer-logo"><img src="img/logo.svg" alt="CraftStand.ma" class="logo-img"></a>
-      <nav class="nav">
-        <a href="index.html">Accueil</a>
-        <a href="services.html" class="active">Services</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="creation-3d.html">Création 3D</a>
-        <a href="contact.html">Rendez-vous</a>
+  <header class="fixed top-0 left-0 right-0 z-50 glass border-b border-white/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 h-[72px] flex items-center justify-between">
+      <!-- Logo -->
+      <a href="index.html" class="flex items-center gap-2.5">
+        <svg viewBox="0 0 80 80" width="36" height="36">
+          <defs><linearGradient id="lg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#FBBF24"/><stop offset="100%" stop-color="#F59E0B"/></linearGradient></defs>
+          <polygon points="40,8 62,20 40,32 18,20" fill="url(#lg)"/>
+          <polygon points="18,20 40,32 40,60 18,48" fill="#F59E0B"/>
+          <polygon points="40,32 62,20 62,48 40,60" fill="#D97706"/>
+          <circle cx="40" cy="32" r="2" fill="#fff" opacity="0.9"/>
+        </svg>
+        <div>
+          <span class="text-lg font-black tracking-tight">CRAFT<span class="text-gold">STAND</span>.MA</span>
+          <div class="text-[9px] text-slate-500 font-semibold tracking-[2px] uppercase" data-i18n="header.subtitle"></div>
+        </div>
+      </a>
+
+      <!-- Nav -->
+      <nav class="hidden md:flex items-center gap-1" id="desktopNav">
+        <a href="index.html" class="px-3 py-2 text-sm font-medium text-slate-300 hover:text-gold rounded-lg transition" data-i18n="nav.home"></a>
+        <a href="services.html" class="px-3 py-2 text-sm font-medium text-slate-300 hover:text-gold rounded-lg transition nav-active" data-i18n="nav.services"></a>
+        <a href="portfolio.html" class="px-3 py-2 text-sm font-medium text-slate-300 hover:text-gold rounded-lg transition" data-i18n="nav.portfolio"></a>
+        <a href="contact.html" class="px-3 py-2 text-sm font-medium text-slate-300 hover:text-gold rounded-lg transition" data-i18n="nav.contact"></a>
+        <a href="creation-3d.html" class="px-3 py-2 text-sm font-medium text-slate-300 hover:text-gold rounded-lg transition" data-i18n="nav.creation3d"></a>
       </nav>
-      <div class="header-actions">
-        <a href="tel:+212663558868" class="btn btn-outline btn-icon" title="Appeler">&#9742;</a>
-        <a href="https://wa.me/212663558868" target="_blank" class="btn btn-green btn-icon" title="WhatsApp">&#128172;</a>
-        <a href="contact.html" class="btn btn-gold">Devis Gratuit</a>
-        <button class="nav-toggle" aria-label="Menu">
-          <span></span><span></span><span></span>
+
+      <!-- Actions -->
+      <div class="flex items-center gap-2">
+        <!-- Language Switcher -->
+        <div class="flex items-center bg-dark-light rounded-lg border border-white/5 p-0.5" id="langSwitcher">
+          <button onclick="setLang('en')" class="lang-btn px-2.5 py-1.5 text-xs font-bold rounded-md transition" data-lang="en">EN</button>
+          <button onclick="setLang('fr')" class="lang-btn px-2.5 py-1.5 text-xs font-bold rounded-md transition" data-lang="fr">FR</button>
+          <button onclick="setLang('ar')" class="lang-btn px-2.5 py-1.5 text-xs font-bold rounded-md transition" data-lang="ar">AR</button>
+        </div>
+        <!-- CTA -->
+        <a href="contact.html" class="hidden sm:inline-flex items-center gap-2 gold-gradient text-dark text-sm font-bold px-5 py-2.5 rounded-lg hover:opacity-90 transition shadow-lg shadow-gold/20" data-i18n="nav.cta"></a>
+        <!-- Mobile toggle -->
+        <button onclick="toggleMobileNav()" class="md:hidden w-10 h-10 flex items-center justify-center rounded-lg bg-dark-light border border-white/5 text-slate-300">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h14M3 10h14M3 14h14"/></svg>
         </button>
       </div>
     </div>
+    <!-- Mobile Nav -->
+    <div id="mobileNav" class="hidden md:hidden border-t border-white/5 px-4 pb-4">
+      <a href="index.html" class="block py-3 text-sm text-slate-300 hover:text-gold border-b border-white/5" data-i18n="nav.home" onclick="toggleMobileNav()"></a>
+      <a href="services.html" class="block py-3 text-sm text-slate-300 hover:text-gold border-b border-white/5 nav-active" data-i18n="nav.services" onclick="toggleMobileNav()"></a>
+      <a href="portfolio.html" class="block py-3 text-sm text-slate-300 hover:text-gold border-b border-white/5" data-i18n="nav.portfolio" onclick="toggleMobileNav()"></a>
+      <a href="contact.html" class="block py-3 text-sm text-slate-300 hover:text-gold border-b border-white/5" data-i18n="nav.contact" onclick="toggleMobileNav()"></a>
+      <a href="creation-3d.html" class="block py-3 text-sm text-slate-300 hover:text-gold" data-i18n="nav.creation3d" onclick="toggleMobileNav()"></a>
+    </div>
   </header>
 
-  <!-- MOBILE MENU -->
-  <div class="mobile-menu">
-    <a href="index.html">Accueil</a>
-    <a href="services.html" class="active">Services</a>
-    <a href="portfolio.html">Portfolio</a>
-    <a href="creation-3d.html">Création 3D</a>
-    <a href="contact.html">Rendez-vous</a>
-    <div class="mobile-menu-ctas">
-      <a href="tel:+212663558868" class="btn btn-gold btn-lg">&#9742; Appeler le 0663-558868</a>
-      <a href="https://wa.me/212663558868" target="_blank" class="btn btn-green btn-lg">&#128172; WhatsApp Direct</a>
-    </div>
-  </div>
+  <!-- HERO SECTION (smaller) -->
+  <section class="relative pt-[72px] overflow-hidden">
+    <div class="relative h-[400px] sm:h-[460px]">
+      <img src="img/file_00000000638c81f4a1fedb11e724ab90.png" alt="CraftStand Services" class="absolute inset-0 w-full h-full object-cover">
+      <div class="absolute inset-0" style="background: linear-gradient(to right, rgba(15,23,42,0.92) 0%, rgba(15,23,42,0.75) 45%, rgba(15,23,42,0.3) 70%, rgba(15,23,42,0.15) 100%);"></div>
+      <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(15,23,42,0.9) 0%, transparent 40%);"></div>
 
-  <!-- PAGE HERO -->
-  <section class="page-hero">
-    <h1>Nos <span>Services</span></h1>
-    <p>Des solutions complètes de conception, fabrication et installation pour chaque type de stand et kiosque.</p>
-    <div class="breadcrumb">
-      <a href="index.html">Accueil</a> / <span>Services</span>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 w-full relative z-10 h-full flex flex-col justify-center">
+        <div class="fade-up">
+          <div class="section-divider mb-5"></div>
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black leading-[1.1] mb-4 drop-shadow-lg" data-i18n="hero.title"></h1>
+          <p class="text-lg text-slate-300 max-w-xl leading-relaxed drop-shadow mb-6" data-i18n="hero.subtitle"></p>
+          <div class="flex flex-wrap gap-3">
+            <a href="contact.html" class="gold-gradient text-dark font-bold px-7 py-3 rounded-xl hover:opacity-90 transition shadow-lg shadow-gold/25 flex items-center gap-2">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H4a2 2 0 00-2 2v10a2 2 0 002 2h4l4 4v-4h2a2 2 0 002-2V4a2 2 0 00-2-2z"/></svg>
+              <span data-i18n="hero.cta2"></span>
+            </a>
+            <a href="https://wa.me/212663558868" target="_blank" class="border-2 border-green-500/50 text-green-400 font-bold px-7 py-3 rounded-xl hover:bg-green-500/10 transition flex items-center gap-2 backdrop-blur-sm">
+              WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- SERVICE 1: STREET FOOD -->
-  <section class="section section-dark" id="street-food">
-    <div class="container">
-      <div class="about-grid">
-        <div class="fade-in-left">
-          <div class="section-badge">&#127828; Kiosques Street Food &amp; Retail</div>
-          <h2 style="font-size:2rem; margin-bottom:1rem; color:#fff;">Kiosques <span style="color:#F59E0B">Street Food</span> &amp; Retail</h2>
-          <p style="color:var(--gray-400); line-height:1.8; margin-bottom:2rem;">
-            Nos kiosques street food sont conçus pour répondre aux normes sanitaires et techniques les plus strictes. Chaque kiosque intègre la plomberie, le drainage, l'électricité et la climatisation pour un fonctionnement autonome et optimal.
-          </p>
-          <div class="service-features" style="margin-bottom:2rem;">
-            <div class="service-feature">
-              <div class="service-feature-check">&#10003;</div>
-              <span>Drainage &amp; évacuation eaux usées</span>
+  <!-- SERVICES SECTION -->
+  <section class="py-20 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-16 fade-up">
+        <div class="section-divider mx-auto mb-4"></div>
+        <h2 class="text-3xl sm:text-4xl font-black mb-3" data-i18n="services.title"></h2>
+        <p class="text-slate-400 max-w-2xl mx-auto text-lg" data-i18n="services.subtitle"></p>
+      </div>
+
+      <div class="space-y-8">
+
+        <!-- Service 1: Design 3D -->
+        <div class="service-card fade-up">
+          <div class="flex flex-col lg:flex-row gap-6">
+            <div class="flex items-start gap-5 flex-1">
+              <div class="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#0F172A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                  <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                  <line x1="12" y1="22.08" x2="12" y2="12"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-2xl font-black mb-2" data-i18n="s1.title"></h3>
+                <p class="text-slate-400 leading-relaxed mb-4" data-i18n="s1.desc"></p>
+              </div>
             </div>
-            <div class="service-feature">
-              <div class="service-feature-check">&#10003;</div>
-              <span>Plomberie complète (arrivées &amp; évacuations)</span>
-            </div>
-            <div class="service-feature">
-              <div class="service-feature-check">&#10003;</div>
-              <span>Câblage électrique aux normes marocaines</span>
-            </div>
-            <div class="service-feature">
-              <div class="service-feature-check">&#10003;</div>
-              <span>Climatisation &amp; ventilation</span>
-            </div>
-            <div class="service-feature">
-              <div class="service-feature-check">&#10003;</div>
-              <span>Éclairage LED professionnel</span>
-            </div>
-            <div class="service-feature">
-              <div class="service-feature-check">&#10003;</div>
-              <span>Revêtements faciles à nettoyer</span>
-            </div>
-            <div class="service-feature">
-              <div class="service-feature-check">&#10003;</div>
-              <span>Design 3D avant fabrication</span>
+            <div class="flex-1">
+              <h4 class="text-sm font-bold text-gold uppercase tracking-wider mb-3" data-i18n="s1.includes.title"></h4>
+              <div class="grid sm:grid-cols-2 gap-1.5 mb-5">
+                <div class="check-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span data-i18n="s1.i1"></span>
+                </div>
+                <div class="check-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span data-i18n="s1.i2"></span>
+                </div>
+                <div class="check-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span data-i18n="s1.i3"></span>
+                </div>
+                <div class="check-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span data-i18n="s1.i4"></span>
+                </div>
+                <div class="check-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span data-i18n="s1.i5"></span>
+                </div>
+                <div class="check-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span data-i18n="s1.i6"></span>
+                </div>
+              </div>
+              <h4 class="text-sm font-bold text-slate-500 uppercase tracking-wider mb-2" data-i18n="s1.cities.title"></h4>
+              <div class="flex flex-wrap gap-2">
+                <span class="city-tag">Rabat</span>
+                <span class="city-tag">Casablanca</span>
+                <span class="city-tag">Marrakech</span>
+                <span class="city-tag">Fès</span>
+                <span class="city-tag">Tanger</span>
+                <span class="city-tag">Agadir</span>
+                <span class="city-tag">Meknès</span>
+                <span class="city-tag">Oujda</span>
+                <span class="city-tag">Kénitra</span>
+                <span class="city-tag">Tétouan</span>
+              </div>
             </div>
           </div>
-          <a href="contact.html?service=street-food" class="btn btn-gold btn-lg">Demander un Devis</a>
         </div>
-        <div class="fade-in-right">
-          <div class="about-image" style="height:350px;">&#127828;</div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- SERVICE 2: MALL -->
-  <section class="section section-alt" id="mall">
-    <div class="container">
-      <div class="about-grid" style="grid-template-columns: 1fr 1fr;">
-        <div class="fade-in-left">
-          <div class="about-image" style="height:350px;">&#127978;</div>
-        </div>
-        <div class="fade-in-right">
-          <div class="section-badge">&#127978; Pop-Up Stores &amp; Mall Kiosks</div>
-          <h2 style="font-size:2rem; margin-bottom:1rem;">Pop-Up Stores &amp; <span style="color:#F59E0B">Mall Kiosks</span></h2>
-          <p style="color:var(--gray-500); line-height:1.8; margin-bottom:2rem;">
-            Stands haut de gamme pour centres commerciaux. Finitions soignées en bois et métal, intégration de caméras CCTV, éclairage directionnel et signalétique LED pour maximiser votre visibilité.
-          </p>
-          <div class="service-features" style="margin-bottom:2rem;">
-            <div class="service-feature">
-              <div class="service-feature-check">&#10003;</div>
-              <span>Finitions bois &amp; métal haut de gamme</span>
+        <!-- Service 2: Fabrication -->
+        <div class="service-card fade-up">
+          <div class="flex flex-col lg:flex-row gap-6">
+            <div class="flex items-start gap-5 flex-1">
+              <div class="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#0F172A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M2 20h20"/>
+                  <path d="M5 20V8l7-5 7 5v12"/>
+                  <path d="M9 20v-6h6v6"/>
+                  <path d="M10 10h4"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-2xl font-black mb-2" data-i18n="s2.title"></h3>
+                <p class="text-slate-400 leading-relaxed mb-4" data-i18n="s2.desc"></p>
+              </div>
             </div>
-            <div class="service-feature">
-              <div class="service-feature-check">&#10003;</div>
-              <span>Intégration caméras CCTV de surveillance</span>
-            </div>
-            <div class="service-feature">
-              <div class="service-feature-check">&#10003;</div>
-              <span>Éclairage directionnel &amp; signalétique LED</span>
-            </div>
-            <div class="service-feature">
-              <div class="service-feature-check">&#10003;</div>
-              <span>Structure modulaire &amp; évolutif</span>
-            </div>
-            <div class="service-feature">
-              <div class="service-feature-check">&#10003;</div>
-              <span>Comptoir, vitrine &amp; rangements intégrés</span>
-            </div>
-            <div class="service-feature">
-              <div class="service-feature-check">&#10003;</div>
-              <span>Respect des normes mall (hauteur, accès)</span>
-            </div>
-            <div class="service-feature">
-              <div class="service-feature-check">&#10003;</div>
-              <span>Installation &amp; maintenance incluse</span>
+            <div class="flex-1">
+              <h4 class="text-sm font-bold text-gold uppercase tracking-wider mb-3" data-i18n="s2.includes.title"></h4>
+              <div class="grid sm:grid-cols-2 gap-1.5 mb-5">
+                <div class="check-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span data-i18n="s2.i1"></span>
+                </div>
+                <div class="check-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span data-i18n="s2.i2"></span>
+                </div>
+                <div class="check-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span data-i18n="s2.i3"></span>
+                </div>
+                <div class="check-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span data-i18n="s2.i4"></span>
+                </div>
+                <div class="check-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span data-i18n="s2.i5"></span>
+                </div>
+                <div class="check-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span data-i18n="s2.i6"></span>
+                </div>
+              </div>
+              <h4 class="text-sm font-bold text-slate-500 uppercase tracking-wider mb-2" data-i18n="s2.cities.title"></h4>
+              <div class="flex flex-wrap gap-2">
+                <span class="city-tag">Rabat</span>
+                <span class="city-tag">Casablanca</span>
+                <span class="city-tag">Marrakech</span>
+                <span class="city-tag">Fès</span>
+                <span class="city-tag">Tanger</span>
+                <span class="city-tag">Agadir</span>
+                <span class="city-tag">Meknès</span>
+                <span class="city-tag">Oujda</span>
+                <span class="city-tag">Kénitra</span>
+                <span class="city-tag">Tétouan</span>
+              </div>
             </div>
           </div>
-          <a href="contact.html?service=pop-up" class="btn btn-gold btn-lg">Demander un Devis</a>
         </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- SERVICE 3: EXHIBITION -->
-  <section class="section section-dark" id="exhibition">
-    <div class="container">
-      <div class="about-grid">
-        <div class="fade-in-left">
-          <div class="section-badge">&#128196; Exhibition Booths &amp; Salons</div>
-          <h2 style="font-size:2rem; margin-bottom:1rem; color:#fff;">Exhibition Booths &amp; <span style="color:#F59E0B">Salons</span></h2>
-          <p style="color:var(--gray-400); line-height:1.8; margin-bottom:2rem;">
-            Stands modulaires et impactants pour salons professionnels et événements. Structures démontables, éclairage professionnel, supports multimedia et écrans intégrés.
-          </p>
-          <div class="service-features" style="margin-bottom:2rem;">
-            <div class="service-feature">
-              <div class="service-feature-check">&#10003;</div>
-              <span>Structure modulaire démontable</span>
+        <!-- Service 3: Installation -->
+        <div class="service-card fade-up">
+          <div class="flex flex-col lg:flex-row gap-6">
+            <div class="flex items-start gap-5 flex-1">
+              <div class="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#0F172A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="1" y="6" width="18" height="12" rx="2"/>
+                  <path d="M1 10h18"/>
+                  <path d="M7 6V4a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2"/>
+                  <circle cx="12" cy="14" r="2"/>
+                  <path d="M12 12v-2"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-2xl font-black mb-2" data-i18n="s3.title"></h3>
+                <p class="text-slate-400 leading-relaxed mb-4" data-i18n="s3.desc"></p>
+              </div>
             </div>
-            <div class="service-feature">
-              <div class="service-feature-check">&#10003;</div>
-              <span>Éclairage directionnel complet</span>
-            </div>
-            <div class="service-feature">
-              <div class="service-feature-check">&#10003;</div>
-              <span>Supports multimedia &amp; écrans</span>
-            </div>
-            <div class="service-feature">
-              <div class="service-feature-check">&#10003;</div>
-              <span>Montage &amp; démontage inclus</span>
-            </div>
-            <div class="service-feature">
-              <div class="service-feature-check">&#10003;</div>
-              <span>Banderole &amp; habillage graphique</span>
-            </div>
-            <div class="service-feature">
-              <div class="service-feature-check">&#10003;</div>
-              <span>Espace réception &amp; meeting</span>
-            </div>
-            <div class="service-feature">
-              <div class="service-feature-check">&#10003;</div>
-              <span>Livraison sur site salon</span>
+            <div class="flex-1">
+              <h4 class="text-sm font-bold text-gold uppercase tracking-wider mb-3" data-i18n="s3.includes.title"></h4>
+              <div class="grid sm:grid-cols-2 gap-1.5 mb-5">
+                <div class="check-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span data-i18n="s3.i1"></span>
+                </div>
+                <div class="check-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span data-i18n="s3.i2"></span>
+                </div>
+                <div class="check-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span data-i18n="s3.i3"></span>
+                </div>
+                <div class="check-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span data-i18n="s3.i4"></span>
+                </div>
+                <div class="check-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span data-i18n="s3.i5"></span>
+                </div>
+                <div class="check-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span data-i18n="s3.i6"></span>
+                </div>
+              </div>
+              <h4 class="text-sm font-bold text-slate-500 uppercase tracking-wider mb-2" data-i18n="s3.cities.title"></h4>
+              <div class="flex flex-wrap gap-2">
+                <span class="city-tag">Rabat</span>
+                <span class="city-tag">Casablanca</span>
+                <span class="city-tag">Marrakech</span>
+                <span class="city-tag">Fès</span>
+                <span class="city-tag">Tanger</span>
+                <span class="city-tag">Agadir</span>
+                <span class="city-tag">Meknès</span>
+                <span class="city-tag">Oujda</span>
+                <span class="city-tag">Kénitra</span>
+                <span class="city-tag">Tétouan</span>
+              </div>
             </div>
           </div>
-          <a href="contact.html?service=exhibition" class="btn btn-gold btn-lg">Demander un Devis</a>
         </div>
-        <div class="fade-in-right">
-          <div class="about-image" style="height:350px;">&#128196;</div>
+
+        <!-- Service 4: Branding / Signage -->
+        <div class="service-card fade-up">
+          <div class="flex flex-col lg:flex-row gap-6">
+            <div class="flex items-start gap-5 flex-1">
+              <div class="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#0F172A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="3" width="18" height="18" rx="2"/>
+                  <circle cx="8.5" cy="8.5" r="1.5"/>
+                  <path d="M21 15l-5-5L5 21"/>
+                  <path d="M12 12l3 3"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-2xl font-black mb-2" data-i18n="s4.title"></h3>
+                <p class="text-slate-400 leading-relaxed mb-4" data-i18n="s4.desc"></p>
+              </div>
+            </div>
+            <div class="flex-1">
+              <h4 class="text-sm font-bold text-gold uppercase tracking-wider mb-3" data-i18n="s4.includes.title"></h4>
+              <div class="grid sm:grid-cols-2 gap-1.5 mb-5">
+                <div class="check-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span data-i18n="s4.i1"></span>
+                </div>
+                <div class="check-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span data-i18n="s4.i2"></span>
+                </div>
+                <div class="check-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span data-i18n="s4.i3"></span>
+                </div>
+                <div class="check-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span data-i18n="s4.i4"></span>
+                </div>
+                <div class="check-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span data-i18n="s4.i5"></span>
+                </div>
+                <div class="check-item">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span data-i18n="s4.i6"></span>
+                </div>
+              </div>
+              <h4 class="text-sm font-bold text-slate-500 uppercase tracking-wider mb-2" data-i18n="s4.cities.title"></h4>
+              <div class="flex flex-wrap gap-2">
+                <span class="city-tag">Rabat</span>
+                <span class="city-tag">Casablanca</span>
+                <span class="city-tag">Marrakech</span>
+                <span class="city-tag">Fès</span>
+                <span class="city-tag">Tanger</span>
+                <span class="city-tag">Agadir</span>
+                <span class="city-tag">Meknès</span>
+                <span class="city-tag">Oujda</span>
+                <span class="city-tag">Kénitra</span>
+                <span class="city-tag">Tétouan</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- CTA -->
+      <div class="mt-16 text-center fade-up">
+        <div class="glass-card rounded-2xl p-10 max-w-3xl mx-auto">
+          <h3 class="text-2xl font-black mb-3" data-i18n="cta.title"></h3>
+          <p class="text-slate-400 mb-6 max-w-lg mx-auto" data-i18n="cta.desc"></p>
+          <div class="flex flex-wrap gap-3 justify-center">
+            <a href="contact.html" class="gold-gradient text-dark font-bold px-8 py-3.5 rounded-xl hover:opacity-90 transition shadow-lg shadow-gold/25 flex items-center gap-2">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H4a2 2 0 00-2 2v10a2 2 0 002 2h4l4 4v-4h2a2 2 0 002-2V4a2 2 0 00-2-2z"/></svg>
+              <span data-i18n="hero.cta2"></span>
+            </a>
+            <a href="https://wa.me/212663558868" target="_blank" class="border-2 border-green-500/50 text-green-400 font-bold px-8 py-3.5 rounded-xl hover:bg-green-500/10 transition flex items-center gap-2 backdrop-blur-sm">
+              WhatsApp
+            </a>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- TECHNICAL DETAILS -->
-  <section class="section">
-    <div class="container">
-      <div class="section-header fade-in">
-        <div class="section-badge">&#9881; Spécifications Techniques</div>
-        <h2 class="section-title">Composants <span>Techniques</span> Intégrés</h2>
-        <p class="section-desc">Chaque projet inclut l'ensemble des installations techniques nécessaires à un fonctionnement complet et autonome.</p>
-      </div>
-      <div class="features-grid">
-        <div class="feature-card fade-in">
-          <div class="feature-icon">&#9889;</div>
-          <h3>Installation Électrique</h3>
-          <p>Câblage complet, tableaux électriques, prises, interrupteurs, éclairage LED, panneaux de contrôle. Conformité aux normes marocaines.</p>
-        </div>
-        <div class="feature-card fade-in">
-          <div class="feature-icon">&#128167;</div>
-          <h3>Plomberie &amp; Drainage</h3>
-          <p>Raccordements eau chaude/froide, évacuations, siphons, éviers professionnels, drains. Conception adaptée aux besoins food &amp; retail.</p>
-        </div>
-        <div class="feature-card fade-in">
-          <div class="feature-icon">&#10052;</div>
-          <h3>Climatisation</h3>
-          <p>Installations split, gainables ou VTAC. Ventilation simple ou double flux selon la superficie et l'usage du kiosque.</p>
-        </div>
-        <div class="feature-card fade-in">
-          <div class="feature-icon">&#128249;</div>
-          <h3>CCTV &amp; Sécurité</h3>
-          <p>Caméras IP/HD, enregistreurs NVR/DVR, systèmes d'alarme, détecteurs de mouvement. Surveillance 24/7 de votre stand.</p>
-        </div>
-        <div class="feature-card fade-in">
-          <div class="feature-icon">&#127981;</div>
-          <h3>Fabrication &amp; Usinage</h3>
-          <p>Usinage CNC, pliage métal, soudure, assemblage bois, finitions laquées ou naturelles. Qualité artisanale et industrielle.</p>
-        </div>
-        <div class="feature-card fade-in">
-          <div class="feature-icon">&#128300;</div>
-          <h3>Design 3D &amp; Visualisation</h3>
-          <p>Rendus 3D photoréalistes de votre projet. Walkthrough virtuel, validation des matériaux et des dimensions avant fabrication.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="section section-alt">
-    <div class="container">
-      <div class="cta-banner fade-in">
-        <div class="cta-content">
-          <h2>Un Projet de Stand ou Kiosque&nbsp;?</h2>
-          <p>Contactez-nous pour une consultation gratuite à Rabat ou un devis personnalisé. Nous couvrons tout le Maroc.</p>
-        </div>
-        <div class="cta-actions">
-          <a href="contact.html" class="btn btn-gold btn-lg">Rendez-vous Gratuit</a>
-          <a href="https://wa.me/212663558868" target="_blank" class="btn btn-green btn-lg">&#128172; WhatsApp</a>
+  <!-- TRAVEL NOTICE -->
+  <section class="py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="glass-card rounded-2xl p-6 sm:p-8 max-w-3xl mx-auto fade-up" style="border: 1px solid rgba(245,158,11,0.15);">
+        <div class="flex flex-col sm:flex-row items-start gap-4">
+          <div class="w-12 h-12 gold-gradient rounded-xl flex items-center justify-center flex-shrink-0">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0F172A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          </div>
+          <div>
+            <h4 class="font-bold text-gold mb-1" data-i18n="services.travel.title"></h4>
+            <p class="text-sm text-slate-400 leading-relaxed" data-i18n="services.travel.desc"></p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer class="footer">
-    <div class="footer-grid">
-      <div class="footer-brand">
-      <a href="index.html" class="logo-link"><img src="img/logo.svg" alt="CraftStand.ma - Design 3D & Fabrication Sur-Mesure" class="logo-img"></a>
-        <p>Conception 3D, Fabrication &amp; Agencement Sur-Mesure de Stands et Kiosques au Maroc.</p>
-        <div class="footer-social">
-          <a href="https://wa.me/212663558868" target="_blank" title="WhatsApp">&#128172;</a>
-          <a href="tel:+212663558868" title="Téléphone">&#9742;</a>
-        </div>
+  <footer class="border-t border-white/5 py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-2">
+        <svg viewBox="0 0 80 80" width="24" height="24"><polygon points="40,8 62,20 40,32 18,20" fill="#F59E0B"/><polygon points="18,20 40,32 40,60 18,48" fill="#F59E0B"/><polygon points="40,32 62,20 62,48 40,60" fill="#D97706"/></svg>
+        <span class="font-bold text-sm">CraftStand.ma</span>
       </div>
-      <div class="footer-col">
-        <h4>Navigation</h4>
-        <ul>
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="creation-3d.html">Création 3D</a></li>
-          <li><a href="contact.html">Rendez-vous</a></li>
-        </ul>
+      <p class="text-xs text-slate-500">&copy; 2026 CraftStand.ma. <span data-i18n="footer.rights"></span></p>
+      <div class="flex gap-4 text-slate-500">
+        <a href="tel:+212663558868" class="hover:text-gold transition"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></a>
+        <a href="https://wa.me/212663558868" target="_blank" class="hover:text-gold transition"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></a>
       </div>
-      <div class="footer-col">
-        <h4>Services</h4>
-        <ul>
-          <li><a href="services.html#street-food">Kiosques Street Food</a></li>
-          <li><a href="services.html#mall">Pop-Up Stores &amp; Malls</a></li>
-          <li><a href="services.html#exhibition">Exhibition Booths</a></li>
-          <li><a href="creation-3d.html">Configurateur 3D</a></li>
-          <li><a href="contact.html">Demander un Devis</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Contact</h4>
-        <div class="footer-contact-item">
-          <span class="footer-contact-icon">&#128205;</span>
-          <span>Rabat, Maroc</span>
-        </div>
-        <div class="footer-contact-item">
-          <span class="footer-contact-icon">&#9742;</span>
-          <a href="tel:+212663558868">0663-558868</a>
-        </div>
-        <div class="footer-contact-item">
-          <span class="footer-contact-icon">&#128172;</span>
-          <a href="https://wa.me/212663558868" target="_blank">WhatsApp Direct</a>
-        </div>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>&copy; 2026 CraftStand.ma. Tous droits réservés.</span>
-      <span>Rabat, Maroc | Conception 3D &amp; Fabrication Sur-Mesure</span>
     </div>
   </footer>
 
-  <!-- WHATSAPP FLOAT -->
-  <a href="https://wa.me/212663558868" target="_blank" class="whatsapp-float" title="Contactez-nous sur WhatsApp">&#128172;</a>
+  <!-- ========== JAVASCRIPT ========== -->
+  <script>
+  // ===== i18n TRANSLATIONS (page-specific) =====
+  const pageTranslations = {
+    en: {
+      'header.subtitle': 'DESIGN 3D & FABRICATION SUR-MESURE',
+      'nav.home': 'Home', 'nav.services': 'Services', 'nav.portfolio': 'Portfolio', 'nav.contact': 'Contact', 'nav.creation3d': 'Création 3D', 'nav.cta': 'Get Quote',
 
-  <script src="js/main.js"></script>
+      // Hero
+      'hero.title': 'Our <span class="gold-text">Services</span>',
+      'hero.subtitle': 'Complete exhibition stand solutions from 3D visualization to turnkey installation. Serving all Moroccan cities.',
+      'hero.cta2': 'Get a Quote',
+
+      // Services
+      'services.title': 'What We Offer',
+      'services.subtitle': 'From initial concept to final installation, we provide end-to-end exhibition stand services across Morocco.',
+
+      // Service 1: Design 3D
+      's1.title': '3D Design & Visualization',
+      's1.desc': 'Our expert 3D designers create photorealistic renders and detailed blueprints of your exhibition stand before fabrication begins. We bring your vision to life with precision planning, material selection guidance, and full technical drawings.',
+      's1.includes.title': 'What\'s Included',
+      's1.i1': 'Photorealistic 3D renders',
+      's1.i2': 'Technical blueprints & plans',
+      's1.i3': 'Material selection guidance',
+      's1.i4': '360° stand walkthrough',
+      's1.i5': 'Lighting simulation',
+      's1.i6': 'Unlimited revision rounds',
+      's1.cities.title': 'Service Areas',
+
+      // Service 2: Fabrication
+      's2.title': 'Multi-Material Fabrication',
+      's2.desc': 'State-of-the-art workshop capabilities for wood, metal, aluminum, and composite materials. CNC precision cutting, artisan finishing, and quality control at every stage ensure your stand meets the highest standards.',
+      's2.includes.title': 'What\'s Included',
+      's2.i1': 'Wood & MDF construction',
+      's2.i2': 'Metal & aluminum framing',
+      's2.i3': 'CNC precision cutting',
+      's2.i4': 'Welding & assembly',
+      's2.i5': 'Paint & lacquer finishing',
+      's2.i6': 'Quality control checks',
+      's2.cities.title': 'Service Areas',
+
+      // Service 3: Installation
+      's3.title': 'Transport & On-Site Installation',
+      's3.desc': 'We handle every aspect of delivery and installation. Our experienced teams transport, assemble, and connect all technical systems — electrical, plumbing, HVAC, CCTV — leaving you with a fully operational exhibition stand.',
+      's3.includes.title': 'What\'s Included',
+      's3.i1': 'Secure transport nationwide',
+      's3.i2': 'Professional on-site assembly',
+      's3.i3': 'Electrical connections',
+      's3.i4': 'Plumbing & drainage setup',
+      's3.i5': 'HVAC & air conditioning',
+      's3.i6': 'CCTV & security wiring',
+      's3.cities.title': 'Service Areas',
+
+      // Service 4: Branding
+      's4.title': 'Branding & Signage',
+      's4.desc': 'Make your brand impossible to ignore. We design and produce LED illuminated signage, vinyl wraps, printed graphics, and custom branded displays that capture attention and drive foot traffic to your exhibition stand.',
+      's4.includes.title': 'What\'s Included',
+      's4.i1': 'LED illuminated signage',
+      's4.i2': 'Vinyl wraps & decals',
+      's4.i3': 'Large-format printing',
+      's4.i4': 'Backlit panels & lightboxes',
+      's4.i5': 'Custom branded displays',
+      's4.i6': 'Digital screen content',
+      's4.cities.title': 'Service Areas',
+
+      // CTA
+      'cta.title': 'Ready to Start Your Project?',
+      'cta.desc': 'Tell us about your exhibition stand project and get a free quote within 24 hours.',
+      // Travel
+      'services.travel.title': 'Free Consultation in Rabat — Travel Fees Outside Rabat',
+      'services.travel.desc': 'In-person consultation at our Rabat headquarters is completely FREE. For visits outside Rabat (Casablanca, Marrakech, Fès, etc.), travel fees apply and will be communicated before scheduling.',
+      'footer.rights': 'All rights reserved.',
+    },
+    fr: {
+      'header.subtitle': 'DESIGN 3D & FABRICATION SUR-MESURE',
+      'nav.home': 'Accueil', 'nav.services': 'Services', 'nav.portfolio': 'Portfolio', 'nav.contact': 'Contact', 'nav.creation3d': 'Création 3D', 'nav.cta': 'Demander un Devis',
+
+      // Hero
+      'hero.title': 'Nos <span class="gold-text">Services</span>',
+      'hero.subtitle': 'Solutions complètes pour stands d\'exposition, de la visualisation 3D à l\'installation clé en main. Toutes villes du Maroc.',
+      'hero.cta2': 'Demander un Devis',
+
+      // Services
+      'services.title': 'Ce que Nous Offrons',
+      'services.subtitle': 'Du concept initial à l\'installation finale, nous fournissons des services complets pour stands d\'exposition à travers le Maroc.',
+
+      // Service 1: Design 3D
+      's1.title': 'Design & Visualisation 3D',
+      's1.desc': 'Nos designers 3D experts créent des rendus photoréalistes et des plans détaillés de votre stand d\'exposition avant le début de la fabrication. Nous donnons vie à votre vision avec une planification précise, des conseils de sélection de matériaux et des plans techniques complets.',
+      's1.includes.title': 'Ce qui est Inclus',
+      's1.i1': 'Rendus 3D photoréalistes',
+      's1.i2': 'Plans techniques & blueprint',
+      's1.i3': 'Conseil en sélection de matériaux',
+      's1.i4': 'Visite virtuelle 360°',
+      's1.i5': 'Simulation d\'éclairage',
+      's1.i6': 'Itérations de révision illimitées',
+      's1.cities.title': 'Zones de Service',
+
+      // Service 2: Fabrication
+      's2.title': 'Fabrication Multi-Matériaux',
+      's2.desc': 'Capacités d\'atelier de pointe pour le bois, le métal, l\'aluminium et les matériaux composites. Usinage CNC de précise, finitions artisanales et contrôle qualité à chaque étape garantissent que votre stand répond aux normes les plus élevées.',
+      's2.includes.title': 'Ce qui est Inclus',
+      's2.i1': 'Construction bois & MDF',
+      's2.i2': 'Charpente métal & aluminium',
+      's2.i3': 'Découpe CNC de précision',
+      's2.i4': 'Soudure & assemblage',
+      's2.i5': 'Peinture & finition laque',
+      's2.i6': 'Contrôles qualité',
+      's2.cities.title': 'Zones de Service',
+
+      // Service 3: Installation
+      's3.title': 'Transport & Installation sur Site',
+      's3.desc': 'Nous nous occupons de chaque aspect de la livraison et de l\'installation. Nos équipes expérimentées transportent, assemblent et raccordent tous les systèmes techniques — électricité, plomberie, climatisation, CCTV — vous laissant un stand d\'exposition entièrement opérationnel.',
+      's3.includes.title': 'Ce qui est Inclus',
+      's3.i1': 'Transport sécurisé national',
+      's3.i2': 'Assemblage professionnel sur site',
+      's3.i3': 'Raccordements électriques',
+      's3.i4': 'Installation plomberie & drainage',
+      's3.i5': 'Climatisation & CVC',
+      's3.i6': 'Câblage CCTV & sécurité',
+      's3.cities.title': 'Zones de Service',
+
+      // Service 4: Branding
+      's4.title': 'Branding & Signalétique',
+      's4.desc': 'Rendez votre marque impossible à ignorer. Nous concevons et produisons des enseignes LED illuminées, des habillages vinyle, des visuels imprimés et des présentoirs personnalisés qui captent l\'attention et génèrent du trafic vers votre stand.',
+      's4.includes.title': 'Ce qui est Inclus',
+      's4.i1': 'Enseignes LED illuminées',
+      's4.i2': 'Habillages vinyle & décalcomanies',
+      's4.i3': 'Impression grand format',
+      's4.i4': 'Panneaux rétroéclairés & lightboxes',
+      's4.i5': 'Présentoirs personnalisés',
+      's4.i6': 'Contenu écrans numériques',
+      's4.cities.title': 'Zones de Service',
+
+      // CTA
+      'cta.title': 'Prêt à Démarrer Votre Projet?',
+      'cta.desc': 'Décrivez votre projet de stand d\'exposition et recevez un devis gratuit sous 24 heures.',
+      // Travel
+      'services.travel.title': 'Consultation Gratuite à Rabat — Frais de Déplacement Hors Rabat',
+      'services.travel.desc': 'La consultation en personne à notre siège de Rabat est entièrement GRATUITE. Pour les déplacements hors de Rabat (Casablanca, Marrakech, Fès, etc.), des frais de déplacement s\'appliquent et seront communiqués avant la planification.',
+      'footer.rights': 'Tous droits réservés.',
+    },
+    ar: {
+      'header.subtitle': 'تصميم ثلاثي الأبعاد وتصنيع حسب الطلب',
+      'nav.home': 'الرئيسية', 'nav.services': 'الخدمات', 'nav.portfolio': 'أعمالنا', 'nav.contact': 'اتصل بنا', 'nav.creation3d': 'إنشاء ثلاثي الأبعاد', 'nav.cta': 'احصل على عرض سعر',
+
+      // Hero
+      'hero.title': '<span class="gold-text">خدماتنا</span>',
+      'hero.subtitle': 'حلول متكاملة لأكشاك المعارض من التصور ثلاثي الأبعاد إلى التركيب الكامل. نخدم جميع المدن المغربية.',
+      'hero.cta2': 'احصل على عرض سعر',
+
+      // Services
+      'services.title': 'ما نقدمه',
+      'services.subtitle': 'من المفهوم الأولي إلى التركيب النهائي، نقدم خدمات شاملة لأكشاك المعرض في جميع أنحاء المغرب.',
+
+      // Service 1: Design 3D
+      's1.title': 'تصميم وتصور ثلاثي الأبعاد',
+      's1.desc': 'يقوم مصممونا المتخصصون في ثلاثية الأبعاد بإنشاء تصاميم واقعية ورسومات تفصيلية لكشك المعرض قبل بدء التصنيع. نحقق رؤيتك من خلال تخطيط دقيق وإرشادات اختيار المواد ورسومات فنية متكاملة.',
+      's1.includes.title': 'ما هو مشمول',
+      's1.i1': 'تصاميم واقعية ثلاثية الأبعاد',
+      's1.i2': 'رسومات فنية ومخططات',
+      's1.i3': 'إرشادات اختيار المواد',
+      's1.i4': 'جولة افتراضية 360 درجة',
+      's1.i5': 'محاكاة الإضاءة',
+      's1.i6': 'جولات مراجعة غير محدودة',
+      's1.cities.title': 'مناطق الخدمة',
+
+      // Service 2: Fabrication
+      's2.title': 'تصنيع متعدد المواد',
+      's2.desc': 'قدرات ورشة عمل متطورة للخشب والمعدن والألمنيوم والمواد المركبة. القطع الدقيق بال CNC والتشطيبات الحرفية وضبط الجودة في كل مرحلة يضمن أن كشكك يلبي أعلى المعايير.',
+      's2.includes.title': 'ما هو مشمول',
+      's2.i1': 'بناء الخشب و MDF',
+      's2.i2': 'هيكل المعدن والألمنيوم',
+      's2.i3': 'قطع CNC دقيق',
+      's2.i4': 'اللحام والتجميع',
+      's2.i5': 'الطلاء والتشطيب',
+      's2.i6': 'فحوصات مراقبة الجودة',
+      's2.cities.title': 'مناطق الخدمة',
+
+      // Service 3: Installation
+      's3.title': 'النقل والتركيب في الموقع',
+      's3.desc': 'نتولى كل جانب من جوانب التسليم والتركيب. تقوم فرقنا المدربة بنقل وتجميع وربط جميع الأنظمة الفنية — الكهرباء، السباكة، التكييف، مراقبة الفيديو — مما يترك لك كشك معرض يعمل بالكامل.',
+      's3.includes.title': 'ما هو مشمول',
+      's3.i1': 'نقل آمن على مستوى الوطن',
+      's3.i2': 'تجميع احترافي في الموقع',
+      's3.i3': 'وصلات كهربائية',
+      's3.i4': 'تركيب السباكة والصرف',
+      's3.i5': 'التكييف والتبريد',
+      's3.i6': 'تمديد مراقبة الفيديو والأمان',
+      's3.cities.title': 'مناطق الخدمة',
+
+      // Service 4: Branding
+      's4.title': 'العلامة التجارية والإشارات',
+      's4.desc': 'اجعل علامتك التجارية لا يمكن تجاهلها. نصمم وننتج لافتات LED مضيئة وأغلفة فينيل ورسومات مطبوعة وعروض عرض مخصصة تجذب الانتباه وتوجه حركة المرور إلى كشكك.',
+      's4.includes.title': 'ما هو مشمول',
+      's4.i1': 'لافتات LED مضيئة',
+      's4.i2': 'أغلفة فينيل وملصقات',
+      's4.i3': 'طباعة التنسيق الكبير',
+      's4.i4': 'لوحات خلفية مضيئة',
+      's4.i5': 'عروض عرض مخصصة',
+      's4.i6': 'محتوى شاشات رقمية',
+      's4.cities.title': 'مناطق الخدمة',
+
+      // CTA
+      'cta.title': 'هل أنت مستعد لبدء مشروعك؟',
+      'cta.desc': 'أخبرنا عن مشروع كشك المعرض واحصل على عرض سعر مجاني خلال 24 ساعة.',
+      // Travel
+      'services.travel.title': 'استشارة مجانية بالرباط — رسوم سفر خارج الرباط',
+      'services.travel.desc': 'الاستشارة الشخصية في مقرنا بالرباط مجانية تماماً. للزيارات خارج الرباط (الدار البيضاء، مراكش، فاس، إلخ)، تُطبق رسوم السفر وستُبلغ قبل الجدولة.',
+      'footer.rights': 'جميع الحقوق محفوظة.',
+    }
+  };
+
+  let currentLang = 'en';
+
+  function setLang(lang) {
+    currentLang = lang;
+    const isRTL = lang === 'ar';
+    document.documentElement.lang = lang;
+    document.documentElement.dir = isRTL ? 'rtl' : 'ltr';
+    document.body.dir = isRTL ? 'rtl' : 'ltr';
+    document.body.className = isRTL ? 'font-cairo' : 'font-inter';
+
+    const t = pageTranslations[lang] || {};
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      if (t[key]) {
+        el.innerHTML = t[key];
+      }
+    });
+
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+      if (btn.dataset.lang === lang) {
+        btn.classList.add('bg-gold', 'text-dark');
+        btn.classList.remove('text-slate-400', 'hover:text-gold');
+      } else {
+        btn.classList.remove('bg-gold', 'text-dark');
+        btn.classList.add('text-slate-400', 'hover:text-gold');
+      }
+    });
+  }
+
+  // ===== MOBILE NAV =====
+  function toggleMobileNav() {
+    document.getElementById('mobileNav').classList.toggle('hidden');
+  }
+
+  // ===== SCROLL ANIMATIONS =====
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+  }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+  // ===== INIT =====
+  setLang('en');
+  </script>
 </body>
 </html>

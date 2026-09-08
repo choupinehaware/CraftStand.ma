@@ -1,28 +1,52 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Création 3D par Ingénieur | CraftStand.ma - Rendu 3D Professionnel Sur-Mesure au Maroc</title>
-  <meta name="description" content="Service de Création 3D professionnelle par nos ingénieurs spécialisés chez CraftStand.ma. Rendu 3D photoréaliste de stands et kiosques sur-mesure au Maroc. Consultation gratuite à Rabat.">
-  <meta name="keywords" content="Création 3D Stand Maroc, Rendu 3D Professionnel, Design 3D Kiosque Rabat, Visualisation 3D Sur Mesure, Ingénieur 3D Stand, Conception 3D Agencement, Stand 3D Casablanca, Kiosque 3D Tanger">
+  <title>Création 3D Stands d'Exposition | Design 3D Sur-Mesure | CraftStand.ma</title>
+  <meta name="description" content="Service de création 3D pour stands d'exposition au Maroc. Modélisation 3D photoréaliste, rendus avant fabrication. Rabat, Casablanca, Marrakech. +212 663-558868">
+  <meta name="keywords" content="creation 3d stande, modelisation 3d stande, design 3d stande maroc, stande 3d, rendu 3d stande, visualisation 3d stande, stande 3d rabat, stande 3d casablanca, stande 3d marrakech, stande 3d fes, stande 3d tangier, stande 3d agadir, stande 1er au maroc, stande maroc 1er, stande marocain, conception 3d stande, logiciel 3d stande, sketchup stande, 3ds max stande">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
   <meta name="author" content="CraftStand.ma">
-  <meta name="robots" content="index, follow">
-  <meta property="og:title" content="Création 3D Professionnelle | CraftStand.ma">
-  <meta property="og:description" content="Nos ingénieurs créent des rendus 3D photoréalistes de vos stands et kiosques. Visualisez votre projet avant fabrication.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://craftstand.ma/creation-3d.html">
-  <meta property="og:locale" content="fr_MA">
   <link rel="canonical" href="https://craftstand.ma/creation-3d.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Création 3D Stands d'Exposition | CraftStand.ma">
+  <meta property="og:description" content="Service de création 3D pour stands d'exposition au Maroc. Modélisation photoréaliste.">
+  <meta property="og:url" content="https://craftstand.ma/creation-3d.html">
+  <meta property="og:image" content="https://craftstand.ma/img/file_00000000638c81f4a1fedb11e724ab90.png">
+  <meta property="og:locale" content="fr_MA">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="ar_MA">
+  <meta property="og:site_name" content="CraftStand.ma">
+
+  <!-- Geo Meta Tags -->
+  <meta name="geo.region" content="MA">
+  <meta name="geo.placename" content="Rabat">
+  <meta name="geo.position" content="34.0209;-6.8416">
+  <meta name="ICBM" content="34.0209, -6.8416">
+
+  <!-- AI Crawler Meta Tags -->
+  <meta name="robots" content="index, follow, noarchive, nosnippet">
+  <meta name="googlebot" content="index, follow, max-image-preview:large">
+  <meta name="bingbot" content="index, follow">
+  <meta name="chatgpt" content="index, follow">
+  <meta name="anthropic-ai" content="index, follow">
+  <meta name="perplexity" content="index, follow">
+  <meta name="youbot" content="index, follow">
+
+  <!-- JSON-LD Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Service",
-    "name": "Création 3D Professionnelle - CraftStand.ma",
-    "description": "Service de conception et rendu 3D photoréaliste de stands et kiosques sur-mesure au Maroc par nos ingénieurs spécialisés.",
+    "name": "Création 3D Stands d'Exposition au Maroc",
+    "description": "Service de modélisation 3D photoréaliste pour stands d'exposition. Visualisation avant fabrication.",
     "provider": {
       "@type": "LocalBusiness",
       "name": "CraftStand.ma",
+      "url": "https://craftstand.ma",
       "telephone": "+212663558868",
       "address": {
         "@type": "PostalAddress",
@@ -35,680 +59,315 @@
         "longitude": -6.8416
       }
     },
-    "areaServed": ["Rabat","Casablanca","Salé","Tanger","Marrakech","Fès","Maroc"],
-    "serviceType": "3D Design & Rendering"
+    "areaServed": [
+      {"@type": "City", "name": "Rabat"},
+      {"@type": "City", "name": "Casablanca"},
+      {"@type": "City", "name": "Marrakech"},
+      {"@type": "City", "name": "Fès"},
+      {"@type": "City", "name": "Tanger"}
+    ],
+    "serviceType": ["Création 3D", "Modélisation 3D", "Rendu 3D", "Visualisation 3D"]
   }
   </script>
-  <link rel="stylesheet" href="css/style.css">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            dark: '#0F172A',
+            'dark-light': '#1E293B',
+            gold: '#F59E0B',
+            'gold-dark': '#D97706',
+          },
+          fontFamily: {
+            inter: ['Inter', 'sans-serif'],
+            cairo: ['Cairo', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
   <style>
-    .process-detail-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 4rem;
-      align-items: center;
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+    body { font-family: 'Inter', sans-serif; background: #0F172A; color: #fff; overflow-x: hidden; }
+    body[dir="rtl"] { font-family: 'Cairo', sans-serif; }
+
+    .glass { background: rgba(15, 23, 42, 0.85); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); }
+    .glass-card { background: rgba(30, 41, 59, 0.6); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.06); }
+
+    .gold-gradient { background: linear-gradient(135deg, #FBBF24, #F59E0B, #D97706); }
+    .gold-text { background: linear-gradient(135deg, #FBBF24, #F59E0B); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+
+    .fade-up { opacity: 0; transform: translateY(30px); transition: all 0.7s cubic-bezier(0.16, 1, 0.3, 1); }
+    .fade-up.visible { opacity: 1; transform: translateY(0); }
+
+    .section-divider { width: 60px; height: 3px; background: linear-gradient(90deg, #F59E0B, transparent); border-radius: 2px; }
+
+    /* Step number badge */
+    .step-num {
+      width: 44px; height: 44px; border-radius: 12px; display: flex; align-items: center; justify-content: center;
+      font-weight: 900; font-size: 1.1rem; color: #0F172A; flex-shrink: 0;
     }
 
-    .process-detail-visual {
-      position: relative;
-      border-radius: 20px;
-      overflow: hidden;
-      background: linear-gradient(135deg, #1E293B, #0F172A);
-      aspect-ratio: 4/3;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border: 1px solid rgba(245, 158, 11, 0.15);
-    }
+    /* FAQ accordion */
+    .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.35s ease, padding 0.35s ease; padding-top: 0; padding-bottom: 0; }
+    .faq-answer.open { max-height: 400px; }
+    .faq-chevron { transition: transform 0.3s ease; }
+    .faq-chevron.open { transform: rotate(180deg); }
 
-    .step-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      padding: 0.5rem 1rem;
-      background: rgba(245, 158, 11, 0.1);
-      border: 1px solid rgba(245, 158, 11, 0.25);
-      border-radius: 50px;
-      font-size: 0.8rem;
-      font-weight: 700;
-      color: #F59E0B;
-      margin-bottom: 1rem;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-    }
+    /* CTA glow */
+    .cta-glow { box-shadow: 0 0 60px rgba(245, 158, 11, 0.12); }
 
-    .deliverable-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1.5rem;
-    }
-
-    .deliverable-card {
-      background: var(--white);
-      border: 1px solid var(--gray-200);
-      border-radius: 16px;
-      padding: 2rem;
-      text-align: center;
-      transition: all 0.3s ease;
-    }
-
-    .deliverable-card:hover {
-      border-color: rgba(245, 158, 11, 0.3);
-      transform: translateY(-4px);
-      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
-    }
-
-    .deliverable-icon {
-      width: 72px;
-      height: 72px;
-      margin: 0 auto 1.25rem;
-      background: linear-gradient(135deg, rgba(245, 158, 11, 0.1), rgba(245, 158, 11, 0.03));
-      border-radius: 18px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 2rem;
-    }
-
-    .deliverable-card h3 {
-      font-size: 1.1rem;
-      margin-bottom: 0.5rem;
-    }
-
-    .deliverable-card p {
-      color: var(--gray-500);
-      font-size: 0.9rem;
-      line-height: 1.6;
-    }
-
-    .faq-item {
-      background: var(--white);
-      border: 1px solid var(--gray-200);
-      border-radius: 14px;
-      margin-bottom: 1rem;
-      overflow: hidden;
-      transition: all 0.3s ease;
-    }
-
-    .faq-item:hover {
-      border-color: rgba(245, 158, 11, 0.2);
-    }
-
-    .faq-question {
-      padding: 1.25rem 1.5rem;
-      cursor: pointer;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-weight: 600;
-      font-size: 1rem;
-      color: var(--dark);
-    }
-
-    .faq-question::after {
-      content: '+';
-      font-size: 1.5rem;
-      color: var(--gold);
-      font-weight: 300;
-      transition: transform 0.3s ease;
-    }
-
-    .faq-item.active .faq-question::after {
-      content: '−';
-    }
-
-    .faq-answer {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.3s ease;
-    }
-
-    .faq-item.active .faq-answer {
-      max-height: 300px;
-    }
-
-    .faq-answer-inner {
-      padding: 0 1.5rem 1.25rem;
-      color: var(--gray-500);
-      line-height: 1.7;
-      font-size: 0.95rem;
-    }
-
-    .gallery-preview-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1rem;
-      margin-top: 2rem;
-    }
-
-    .gallery-preview-card {
-      aspect-ratio: 4/3;
-      border-radius: 14px;
-      overflow: hidden;
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 3rem;
-      border: 1px solid rgba(255, 255, 255, 0.05);
-      transition: all 0.3s ease;
-    }
-
-    .gallery-preview-card::after {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(180deg, transparent 40%, rgba(0,0,0,0.4) 100%);
-    }
-
-    .gallery-preview-label {
-      position: absolute;
-      bottom: 1rem;
-      left: 1rem;
-      z-index: 2;
-      color: #fff;
-      font-size: 0.85rem;
-      font-weight: 600;
-    }
-
-    @media (max-width: 1024px) {
-      .process-detail-grid { grid-template-columns: 1fr; gap: 2rem; }
-      .deliverable-grid { grid-template-columns: repeat(2, 1fr); }
-      .gallery-preview-grid { grid-template-columns: repeat(2, 1fr); }
-    }
+    /* Active nav */
+    .nav-active { color: #F59E0B !important; }
 
     @media (max-width: 768px) {
-      .deliverable-grid { grid-template-columns: 1fr; }
-      .gallery-preview-grid { grid-template-columns: 1fr; }
+      .hero-title { font-size: 2.2rem; }
     }
   </style>
 </head>
-<body>
+<body class="font-inter" dir="ltr">
+
+  <!-- TOAST -->
+  <div class="toast" id="toast" style="position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(20px);background:rgba(245,158,11,0.15);border:1px solid rgba(245,158,11,0.3);border-radius:10px;padding:0.6rem 1.5rem;font-size:0.85rem;color:#F59E0B;font-weight:600;z-index:999;opacity:0;pointer-events:none;transition:all 0.4s;"></div>
 
   <!-- HEADER -->
-  <header class="header">
-    <div class="header-inner">
-        <a href="index.html" class="logo-link footer-logo"><img src="img/logo.svg" alt="CraftStand.ma" class="logo-img"></a>
-      <nav class="nav">
-        <a href="index.html">Accueil</a>
-        <a href="services.html">Services</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="creation-3d.html" class="active">Création 3D</a>
-        <a href="contact.html">Rendez-vous</a>
+  <header class="fixed top-0 left-0 right-0 z-50 glass border-b border-white/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 h-[72px] flex items-center justify-between">
+      <!-- Logo -->
+      <a href="index.html" class="flex items-center gap-2.5">
+        <svg viewBox="0 0 80 80" width="36" height="36">
+          <defs><linearGradient id="lg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#FBBF24"/><stop offset="100%" stop-color="#F59E0B"/></linearGradient></defs>
+          <polygon points="40,8 62,20 40,32 18,20" fill="url(#lg)"/>
+          <polygon points="18,20 40,32 40,60 18,48" fill="#F59E0B"/>
+          <polygon points="40,32 62,20 62,48 40,60" fill="#D97706"/>
+          <circle cx="40" cy="32" r="2" fill="#fff" opacity="0.9"/>
+        </svg>
+        <div>
+          <span class="text-lg font-black tracking-tight">CRAFT<span class="text-gold">STAND</span>.MA</span>
+          <div class="text-[9px] text-slate-500 font-semibold tracking-[2px] uppercase" data-i18n="header.subtitle"></div>
+        </div>
+      </a>
+
+      <!-- Nav -->
+      <nav class="hidden md:flex items-center gap-1" id="desktopNav">
+        <a href="index.html" class="px-3 py-2 text-sm font-medium text-slate-300 hover:text-gold rounded-lg transition" data-i18n="nav.home"></a>
+        <a href="services.html" class="px-3 py-2 text-sm font-medium text-slate-300 hover:text-gold rounded-lg transition" data-i18n="nav.services"></a>
+        <a href="portfolio.html" class="px-3 py-2 text-sm font-medium text-slate-300 hover:text-gold rounded-lg transition" data-i18n="nav.portfolio"></a>
+        <a href="contact.html" class="px-3 py-2 text-sm font-medium text-slate-300 hover:text-gold rounded-lg transition" data-i18n="nav.contact"></a>
+        <a href="creation-3d.html" class="px-3 py-2 text-sm font-medium text-slate-300 hover:text-gold rounded-lg transition nav-active" data-i18n="nav.creation3d"></a>
       </nav>
-      <div class="header-actions">
-        <a href="tel:+212663558868" class="btn btn-outline btn-icon" title="Appeler">&#9742;</a>
-        <a href="https://wa.me/212663558868" target="_blank" class="btn btn-green btn-icon" title="WhatsApp">&#128172;</a>
-        <a href="contact.html" class="btn btn-gold">Devis Gratuit</a>
-        <button class="nav-toggle" aria-label="Menu">
-          <span></span><span></span><span></span>
+
+      <!-- Actions -->
+      <div class="flex items-center gap-2">
+        <!-- Language Switcher -->
+        <div class="flex items-center bg-dark-light rounded-lg border border-white/5 p-0.5" id="langSwitcher">
+          <button onclick="setLang('en')" class="lang-btn px-2.5 py-1.5 text-xs font-bold rounded-md transition" data-lang="en">EN</button>
+          <button onclick="setLang('fr')" class="lang-btn px-2.5 py-1.5 text-xs font-bold rounded-md transition" data-lang="fr">FR</button>
+          <button onclick="setLang('ar')" class="lang-btn px-2.5 py-1.5 text-xs font-bold rounded-md transition" data-lang="ar">AR</button>
+        </div>
+        <!-- CTA -->
+        <a href="contact.html" class="hidden sm:inline-flex items-center gap-2 gold-gradient text-dark text-sm font-bold px-5 py-2.5 rounded-lg hover:opacity-90 transition shadow-lg shadow-gold/20" data-i18n="nav.cta"></a>
+        <!-- Mobile toggle -->
+        <button onclick="toggleMobileNav()" class="md:hidden w-10 h-10 flex items-center justify-center rounded-lg bg-dark-light border border-white/5 text-slate-300">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h14M3 10h14M3 14h14"/></svg>
         </button>
       </div>
     </div>
+    <!-- Mobile Nav -->
+    <div id="mobileNav" class="hidden md:hidden border-t border-white/5 px-4 pb-4">
+      <a href="index.html" class="block py-3 text-sm text-slate-300 hover:text-gold border-b border-white/5" data-i18n="nav.home" onclick="toggleMobileNav()"></a>
+      <a href="services.html" class="block py-3 text-sm text-slate-300 hover:text-gold border-b border-white/5" data-i18n="nav.services" onclick="toggleMobileNav()"></a>
+      <a href="portfolio.html" class="block py-3 text-sm text-slate-300 hover:text-gold border-b border-white/5" data-i18n="nav.portfolio" onclick="toggleMobileNav()"></a>
+      <a href="contact.html" class="block py-3 text-sm text-slate-300 hover:text-gold border-b border-white/5" data-i18n="nav.contact" onclick="toggleMobileNav()"></a>
+      <a href="creation-3d.html" class="block py-3 text-sm text-slate-300 hover:text-gold nav-active" data-i18n="nav.creation3d" onclick="toggleMobileNav()"></a>
+    </div>
   </header>
 
-  <!-- MOBILE MENU -->
-  <div class="mobile-menu">
-    <a href="index.html">Accueil</a>
-    <a href="services.html">Services</a>
-    <a href="portfolio.html">Portfolio</a>
-    <a href="creation-3d.html" class="active">Création 3D</a>
-    <a href="contact.html">Rendez-vous</a>
-    <div class="mobile-menu-ctas">
-      <a href="tel:+212663558868" class="btn btn-gold btn-lg">&#9742; Appeler le 0663-558868</a>
-      <a href="https://wa.me/212663558868" target="_blank" class="btn btn-green btn-lg">&#128172; WhatsApp Direct</a>
-    </div>
-  </div>
+  <!-- HERO SECTION -->
+  <section id="hero" class="relative flex items-center overflow-hidden pt-[72px]" style="height: 400px;">
+    <img src="img/file_00000000638c81f4a1fedb11e724ab90.png" alt="Création 3D CraftStand" class="absolute inset-0 w-full h-full object-cover">
+    <div class="absolute inset-0" style="background: linear-gradient(to right, rgba(15,23,42,0.92) 0%, rgba(15,23,42,0.75) 45%, rgba(15,23,42,0.3) 70%, rgba(15,23,42,0.15) 100%);"></div>
+    <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(15,23,42,0.8) 0%, transparent 30%);"></div>
 
-  <!-- PAGE HERO -->
-  <section class="page-hero">
-    <h1>Création 3D par <span>Ingénieur</span></h1>
-    <p>Nos ingénieurs spécialisés créent des rendus 3D photoréalistes de vos stands et kiosques. Visualisez votre projet avant fabrication.</p>
-    <div class="breadcrumb">
-      <a href="index.html">Accueil</a> / <span>Création 3D</span>
-    </div>
-  </section>
-
-  <!-- INTRO -->
-  <section class="section">
-    <div class="container">
-      <div class="process-detail-grid">
-        <div class="fade-in-left">
-          <div class="step-badge">&#128300; Service Professionnel</div>
-          <h2 style="font-size:2rem; margin-bottom:1rem;">Une Création 3D <span style="color:#F59E0B;">Réalisée par un Ingénieur</span></h2>
-          <p style="color:var(--gray-500); line-height:1.8; margin-bottom:1.5rem;">
-            Contrairement aux outils automatisés, notre service de création 3D est entièrement réalisé par nos ingénieurs spécialisés en conception de stands et kiosques. Chaque projet est unique, pensé et modélisé sur-mesure selon vos besoins exacts.
-          </p>
-          <p style="color:var(--gray-500); line-height:1.8; margin-bottom:2rem;">
-            Notre équipe maîtrise les logiciels de modélisation 3D professionnels (Blender, 3ds Max, SketchUp, SolidWorks) et crée des rendus photoréalistes qui permettent de visualiser votre stand sous tous les angles avant même le début de la fabrication.
-          </p>
-          <div class="about-list">
-            <div class="about-list-item">
-              <div class="about-list-icon">&#9989;</div>
-              <div class="about-list-text">
-                <strong>100% Sur-Mesure</strong>
-                <span>Aucun template, chaque projet est unique et conçu selon vos spécifications</span>
-              </div>
-            </div>
-            <div class="about-list-item">
-              <div class="about-list-icon">&#128300;</div>
-              <div class="about-list-text">
-                <strong>Rendu Photoréaliste</strong>
-                <span>Images haute résolution indiscernables de la réalité</span>
-              </div>
-            </div>
-            <div class="about-list-item">
-              <div class="about-list-icon">&#128196;</div>
-              <div class="about-list-text">
-                <strong>Fichiers Techniques Inclus</strong>
-                <span>Plans 2D, cotes détaillées, plan d'implantation pour la fabrication</span>
-              </div>
-            </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 w-full relative z-10 py-16">
+      <div class="max-w-2xl">
+        <div class="fade-up">
+          <div class="inline-flex items-center gap-2 bg-gold/10 border border-gold/20 rounded-full px-4 py-1.5 mb-5 backdrop-blur-sm">
+            <span class="w-2 h-2 bg-gold rounded-full animate-pulse"></span>
+            <span class="text-gold text-xs font-semibold tracking-wide uppercase" data-i18n="hero.badge"></span>
           </div>
-        </div>
-        <div class="process-detail-visual fade-in-right">
-          <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;position:relative;z-index:2;">
-            <defs>
-              <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#FBBF24"/><stop offset="100%" stop-color="#F59E0B"/></linearGradient>
-              <linearGradient id="g2" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#F59E0B"/><stop offset="100%" stop-color="#D97706"/></linearGradient>
-              <linearGradient id="g3" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#D97706"/><stop offset="100%" stop-color="#B45309"/></linearGradient>
-            </defs>
-            <!-- Monitor -->
-            <rect x="80" y="40" width="240" height="160" rx="10" fill="#1E293B" stroke="#334155" stroke-width="2"/>
-            <rect x="90" y="50" width="220" height="130" rx="4" fill="#0F172A"/>
-            <!-- 3D Stand on screen -->
-            <polygon points="200,70 240,90 200,110 160,90" fill="url(#g1)" opacity="0.9"/>
-            <polygon points="160,90 200,110 200,150 160,130" fill="url(#g2)" opacity="0.8"/>
-            <polygon points="200,110 240,90 240,130 200,150" fill="url(#g3)" opacity="0.8"/>
-            <!-- Grid lines on screen -->
-            <line x1="90" y1="100" x2="310" y2="100" stroke="#1E293B" stroke-width="0.5"/>
-            <line x1="90" y1="120" x2="310" y2="120" stroke="#1E293B" stroke-width="0.5"/>
-            <line x1="90" y1="140" x2="310" y2="140" stroke="#1E293B" stroke-width="0.5"/>
-            <line x1="150" y1="50" x2="150" y2="180" stroke="#1E293B" stroke-width="0.5"/>
-            <line x1="200" y1="50" x2="200" y2="180" stroke="#1E293B" stroke-width="0.5"/>
-            <line x1="250" y1="50" x2="250" y2="180" stroke="#1E293B" stroke-width="0.5"/>
-            <!-- Cursor -->
-            <polygon points="260,75 275,95 265,95 270,105 260,100 265,90" fill="#F59E0B"/>
-            <!-- Monitor stand -->
-            <rect x="180" y="200" width="40" height="20" rx="2" fill="#334155"/>
-            <rect x="160" y="218" width="80" height="6" rx="3" fill="#475569"/>
-            <!-- floating dots -->
-            <circle cx="60" cy="80" r="3" fill="#F59E0B" opacity="0.4"/>
-            <circle cx="350" cy="60" r="2" fill="#F59E0B" opacity="0.3"/>
-            <circle cx="50" cy="200" r="2.5" fill="#F59E0B" opacity="0.25"/>
-            <circle cx="360" cy="220" r="3" fill="#F59E0B" opacity="0.35"/>
-          </svg>
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black leading-[1.1] mb-5 drop-shadow-lg hero-title" data-i18n="hero.title"></h1>
+          <p class="text-lg text-slate-300 mb-6 max-w-lg leading-relaxed drop-shadow" data-i18n="hero.subtitle"></p>
+          <div class="flex flex-wrap gap-3">
+            <a href="contact.html" class="gold-gradient text-dark font-bold px-7 py-3.5 rounded-xl hover:opacity-90 transition shadow-lg shadow-gold/25 flex items-center gap-2">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H4a2 2 0 00-2 2v10a2 2 0 002 2h4l4 4v-4h2a2 2 0 002-2V4a2 2 0 00-2-2z"/></svg>
+              <span data-i18n="hero.cta2"></span>
+            </a>
+            <a href="https://wa.me/212663558868" target="_blank" class="border-2 border-green-500/50 text-green-400 font-bold px-7 py-3.5 rounded-xl hover:bg-green-500/10 transition flex items-center gap-2 backdrop-blur-sm">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+              WhatsApp
+            </a>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- PROCESS STEPS -->
-  <section class="section section-dark">
-    <div class="container">
-      <div class="section-header fade-in">
-        <div class="section-badge">&#128736; Le Processus</div>
-        <h2 class="section-title">Comment Travaille <span style="color:#F59E0B;">Notre Ingénieur 3D</span></h2>
-        <p class="section-desc">Un processus structuré en 5 étapes pour garantir un rendu 3D fidèle à votre vision et prêt pour la fabrication.</p>
+  <!-- SECTION 1: INTRO -->
+  <section id="intro" class="py-20 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="max-w-3xl mx-auto text-center fade-up">
+        <div class="section-divider mx-auto mb-4"></div>
+        <h2 class="text-3xl sm:text-4xl font-black mb-5" data-i18n="intro.title"></h2>
+        <p class="text-slate-400 text-lg leading-relaxed mb-6" data-i18n="intro.p1"></p>
+        <p class="text-slate-400 leading-relaxed" data-i18n="intro.p2"></p>
       </div>
-
-      <!-- ÉTAPE 1 -->
-      <div class="process-detail-grid fade-in" style="margin-bottom:4rem;">
-        <div class="process-detail-visual" style="background: linear-gradient(135deg, #1E293B, #334155);">
-          <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;position:relative;z-index:2;">
-            <!-- Table -->
-            <rect x="60" y="170" width="280" height="8" rx="4" fill="#475569"/>
-            <rect x="80" y="178" width="10" height="60" rx="2" fill="#334155"/>
-            <rect x="310" y="178" width="10" height="60" rx="2" fill="#334155"/>
-            <!-- Person 1 (left) -->
-            <circle cx="120" cy="100" r="22" fill="#1E293B" stroke="#F59E0B" stroke-width="2"/>
-            <circle cx="120" cy="95" r="8" fill="#F59E0B" opacity="0.3"/>
-            <rect x="105" y="122" width="30" height="45" rx="5" fill="#1E293B" stroke="#F59E0B" stroke-width="1.5"/>
-            <!-- Person 2 (right) -->
-            <circle cx="280" cy="100" r="22" fill="#1E293B" stroke="#94A3B8" stroke-width="2"/>
-            <circle cx="280" cy="95" r="8" fill="#94A3B8" opacity="0.3"/>
-            <rect x="265" y="122" width="30" height="45" rx="5" fill="#1E293B" stroke="#94A3B8" stroke-width="1.5"/>
-            <!-- Speech bubbles -->
-            <rect x="145" y="60" width="50" height="30" rx="8" fill="#F59E0B" opacity="0.15" stroke="#F59E0B" stroke-width="1"/>
-            <polygon points="160,90 170,90 155,100" fill="#F59E0B" opacity="0.15"/>
-            <rect x="205" y="65" width="55" height="28" rx="8" fill="#94A3B8" opacity="0.1" stroke="#94A3B8" stroke-width="1"/>
-            <polygon points="245,93 235,93 250,102" fill="#94A3B8" opacity="0.1"/>
-            <!-- Dots in bubbles -->
-            <circle cx="163" cy="75" r="2" fill="#F59E0B"/>
-            <circle cx="170" cy="75" r="2" fill="#F59E0B"/>
-            <circle cx="177" cy="75" r="2" fill="#F59E0B"/>
-            <circle cx="218" cy="79" r="2" fill="#94A3B8"/>
-            <circle cx="225" cy="79" r="2" fill="#94A3B8"/>
-            <circle cx="232" cy="79" r="2" fill="#94A3B8"/>
-            <!-- Notepad on table -->
-            <rect x="175" y="150" width="50" height="20" rx="2" fill="#0F172A" stroke="#334155" stroke-width="1"/>
-            <line x1="180" y1="157" x2="220" y2="157" stroke="#475569" stroke-width="1"/>
-            <line x1="180" y1="162" x2="210" y2="162" stroke="#475569" stroke-width="1"/>
-            <!-- Pencil -->
-            <rect x="235" y="152" width="3" height="16" rx="1" fill="#F59E0B" transform="rotate(15,236,160)"/>
-          </svg>
+      <div class="grid sm:grid-cols-3 gap-5 mt-12 max-w-4xl mx-auto">
+        <div class="glass-card rounded-2xl p-6 text-center hover:border-gold/30 transition-all duration-300 fade-up">
+          <div class="w-14 h-14 gold-gradient rounded-xl flex items-center justify-center text-2xl mx-auto mb-4">🎯</div>
+          <h3 class="font-bold text-sm mb-1" data-i18n="intro.benefit1.title"></h3>
+          <p class="text-xs text-slate-400" data-i18n="intro.benefit1.desc"></p>
         </div>
-        <div>
-          <div class="step-badge">Étape 01</div>
-          <h3 style="color:#fff; font-size:1.4rem; margin-bottom:1rem;">Brief & Consultation</h3>
-          <p style="color:var(--gray-400); line-height:1.8; margin-bottom:1rem;">
-            Premier rendez-vous (gratuit à Rabat, payant hors Rabat). Notre ingénieur recueille toutes vos exigences : type de stand, dimensions, matériaux souhaités, équipements techniques, contraintes de lieux, charte graphique.
-          </p>
-          <div class="service-features">
-            <div class="service-feature">
-              <div class="service-feature-check">&#10003;</div>
-              <span>Analyse des besoins fonctionnels</span>
-            </div>
-            <div class="service-feature">
-              <div class="service-feature-check">&#10003;</div>
-              <span>Visite technique du lieu (si nécessaire)</span>
-            </div>
-            <div class="service-feature">
-              <div class="service-feature-check">&#10003;</div>
-              <span>Préconisations matériaux & techniques</span>
-            </div>
-            <div class="service-feature">
-              <div class="service-feature-check">&#10003;</div>
-              <span>Cahier des charges validé</span>
-            </div>
+        <div class="glass-card rounded-2xl p-6 text-center hover:border-gold/30 transition-all duration-300 fade-up">
+          <div class="w-14 h-14 gold-gradient rounded-xl flex items-center justify-center text-2xl mx-auto mb-4">💰</div>
+          <h3 class="font-bold text-sm mb-1" data-i18n="intro.benefit2.title"></h3>
+          <p class="text-xs text-slate-400" data-i18n="intro.benefit2.desc"></p>
+        </div>
+        <div class="glass-card rounded-2xl p-6 text-center hover:border-gold/30 transition-all duration-300 fade-up">
+          <div class="w-14 h-14 gold-gradient rounded-xl flex items-center justify-center text-2xl mx-auto mb-4">⚡</div>
+          <h3 class="font-bold text-sm mb-1" data-i18n="intro.benefit3.title"></h3>
+          <p class="text-xs text-slate-400" data-i18n="intro.benefit3.desc"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: OUR 3D PROCESS -->
+  <section id="process" class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-14 fade-up">
+        <div class="section-divider mx-auto mb-4"></div>
+        <h2 class="text-3xl sm:text-4xl font-black mb-3" data-i18n="process.title"></h2>
+        <p class="text-slate-400 max-w-xl mx-auto" data-i18n="process.subtitle"></p>
+      </div>
+      <div class="space-y-5 max-w-3xl mx-auto">
+        <!-- Step 1 -->
+        <div class="glass-card rounded-2xl p-6 flex items-start gap-5 hover:border-gold/30 transition-all duration-300 fade-up">
+          <div class="step-num gold-gradient">1</div>
+          <div>
+            <h3 class="font-bold text-lg mb-1" data-i18n="process.s1.title"></h3>
+            <p class="text-sm text-slate-400 leading-relaxed" data-i18n="process.s1.desc"></p>
+          </div>
+        </div>
+        <!-- Step 2 -->
+        <div class="glass-card rounded-2xl p-6 flex items-start gap-5 hover:border-gold/30 transition-all duration-300 fade-up">
+          <div class="step-num gold-gradient">2</div>
+          <div>
+            <h3 class="font-bold text-lg mb-1" data-i18n="process.s2.title"></h3>
+            <p class="text-sm text-slate-400 leading-relaxed" data-i18n="process.s2.desc"></p>
+          </div>
+        </div>
+        <!-- Step 3 -->
+        <div class="glass-card rounded-2xl p-6 flex items-start gap-5 hover:border-gold/30 transition-all duration-300 fade-up">
+          <div class="step-num gold-gradient">3</div>
+          <div>
+            <h3 class="font-bold text-lg mb-1" data-i18n="process.s3.title"></h3>
+            <p class="text-sm text-slate-400 leading-relaxed" data-i18n="process.s3.desc"></p>
+          </div>
+        </div>
+        <!-- Step 4 -->
+        <div class="glass-card rounded-2xl p-6 flex items-start gap-5 hover:border-gold/30 transition-all duration-300 fade-up">
+          <div class="step-num gold-gradient">4</div>
+          <div>
+            <h3 class="font-bold text-lg mb-1" data-i18n="process.s4.title"></h3>
+            <p class="text-sm text-slate-400 leading-relaxed" data-i18n="process.s4.desc"></p>
+          </div>
+        </div>
+        <!-- Step 5 -->
+        <div class="glass-card rounded-2xl p-6 flex items-start gap-5 hover:border-gold/30 transition-all duration-300 fade-up">
+          <div class="step-num gold-gradient">5</div>
+          <div>
+            <h3 class="font-bold text-lg mb-1" data-i18n="process.s5.title"></h3>
+            <p class="text-sm text-slate-400 leading-relaxed" data-i18n="process.s5.desc"></p>
           </div>
         </div>
       </div>
+    </div>
+  </section>
 
-      <!-- ÉTAPE 2 -->
-      <div class="process-detail-grid fade-in" style="margin-bottom:4rem; grid-template-columns: 1fr 1fr;">
-        <div style="order:1;">
-          <div class="step-badge">Étape 02</div>
-          <h3 style="color:#fff; font-size:1.4rem; margin-bottom:1rem;">Esquisses & Concepts</h3>
-          <p style="color:var(--gray-400); line-height:1.8; margin-bottom:1rem;">
-            L'ingénieur crée plusieurs ébauches 2D et premiers croquis 3D. Vous visualisez les différentes options de design, de disposition et de matériaux avant de valider la direction artistique.
-          </p>
-          <div class="service-features">
-            <div class="service-feature">
-              <div class="service-feature-check">&#10003;</div>
-              <span>2 à 3 concepts différents proposés</span>
-            </div>
-            <div class="service-feature">
-              <div class="service-feature-check">&#10003;</div>
-              <span>Planches de matériaux & couleurs</span>
-            </div>
-            <div class="service-feature">
-              <div class="service-feature-check">&#10003;</div>
-              <span>Validation client à chaque étape</span>
-            </div>
-          </div>
+  <!-- SECTION 3: DELIVERABLES -->
+  <section id="deliverables" class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-14 fade-up">
+        <div class="section-divider mx-auto mb-4"></div>
+        <h2 class="text-3xl sm:text-4xl font-black mb-3" data-i18n="deliverables.title"></h2>
+        <p class="text-slate-400 max-w-xl mx-auto" data-i18n="deliverables.subtitle"></p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-5xl mx-auto">
+        <div class="glass-card rounded-2xl p-6 hover:border-gold/30 transition-all duration-300 group hover:-translate-y-1 fade-up">
+          <div class="w-12 h-12 gold-gradient rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0F172A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg></div>
+          <h3 class="font-bold mb-1" data-i18n="deliverables.d1.title"></h3>
+          <p class="text-sm text-slate-400" data-i18n="deliverables.d1.desc"></p>
         </div>
-        <div class="process-detail-visual" style="background: linear-gradient(135deg, #334155, #1E293B); order:2;">
-          <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;position:relative;z-index:2;">
-            <!-- Paper 1 -->
-            <rect x="40" y="50" width="140" height="100" rx="4" fill="#0F172A" stroke="#334155" stroke-width="1.5" transform="rotate(-5,110,100)"/>
-            <line x1="55" y1="70" x2="165" y2="70" stroke="#475569" stroke-width="1" transform="rotate(-5,110,100)"/>
-            <line x1="55" y1="80" x2="150" y2="80" stroke="#475569" stroke-width="1" transform="rotate(-5,110,100)"/>
-            <line x1="55" y1="90" x2="160" y2="90" stroke="#475569" stroke-width="1" transform="rotate(-5,110,100)"/>
-            <!-- Mini stand sketch on paper 1 -->
-            <polygon points="80,105 105,115 80,125 55,115" fill="none" stroke="#F59E0B" stroke-width="1.5" transform="rotate(-5,110,100)"/>
-            <line x1="55" y1="115" x2="55" y2="135" stroke="#F59E0B" stroke-width="1" transform="rotate(-5,110,100)"/>
-            <line x1="105" y1="115" x2="105" y2="135" stroke="#F59E0B" stroke-width="1" transform="rotate(-5,110,100)"/>
-            <!-- Paper 2 -->
-            <rect x="180" y="40" width="140" height="100" rx="4" fill="#0F172A" stroke="#334155" stroke-width="1.5" transform="rotate(3,250,90)"/>
-            <line x1="195" y1="60" x2="305" y2="60" stroke="#475569" stroke-width="1" transform="rotate(3,250,90)"/>
-            <line x1="195" y1="70" x2="290" y2="70" stroke="#475569" stroke-width="1" transform="rotate(3,250,90)"/>
-            <!-- Mini kiosk sketch on paper 2 -->
-            <rect x="220" y="80" width="60" height="40" rx="2" fill="none" stroke="#94A3B8" stroke-width="1.5" transform="rotate(3,250,90)"/>
-            <rect x="225" y="85" width="20" height="15" rx="1" fill="none" stroke="#94A3B8" stroke-width="1" transform="rotate(3,250,90)"/>
-            <rect x="250" y="85" width="20" height="15" rx="1" fill="none" stroke="#94A3B8" stroke-width="1" transform="rotate(3,250,90)"/>
-            <!-- Paper 3 (bottom) -->
-            <rect x="110" y="160" width="180" height="110" rx="4" fill="#0F172A" stroke="#F59E0B" stroke-width="2" transform="rotate(2,200,215)"/>
-            <text x="130" y="185" font-family="Inter,sans-serif" font-size="10" fill="#F59E0B" font-weight="700" transform="rotate(2,200,215)">CONCEPT VALIDÉ</text>
-            <line x1="130" y1="195" x2="270" y2="195" stroke="#F59E0B" stroke-width="0.5" opacity="0.3" transform="rotate(2,200,215)"/>
-            <!-- Larger stand sketch -->
-            <polygon points="165,220 210,240 165,260 120,240" fill="none" stroke="#F59E0B" stroke-width="2" transform="rotate(2,200,215)"/>
-            <line x1="120" y1="240" x2="120" y2="270" stroke="#F59E0B" stroke-width="1.5" transform="rotate(2,200,215)"/>
-            <line x1="210" y1="240" x2="210" y2="270" stroke="#F59E0B" stroke-width="1.5" transform="rotate(2,200,215)"/>
-            <!-- Checkmark -->
-            <circle cx="280" cy="180" r="14" fill="#F59E0B" opacity="0.2"/>
-            <polyline points="273,180 278,186 288,174" fill="none" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
+        <div class="glass-card rounded-2xl p-6 hover:border-gold/30 transition-all duration-300 group hover:-translate-y-1 fade-up">
+          <div class="w-12 h-12 gold-gradient rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0F172A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div>
+          <h3 class="font-bold mb-1" data-i18n="deliverables.d2.title"></h3>
+          <p class="text-sm text-slate-400" data-i18n="deliverables.d2.desc"></p>
+        </div>
+        <div class="glass-card rounded-2xl p-6 hover:border-gold/30 transition-all duration-300 group hover:-translate-y-1 fade-up">
+          <div class="w-12 h-12 gold-gradient rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0F172A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg></div>
+          <h3 class="font-bold mb-1" data-i18n="deliverables.d3.title"></h3>
+          <p class="text-sm text-slate-400" data-i18n="deliverables.d3.desc"></p>
+        </div>
+        <div class="glass-card rounded-2xl p-6 hover:border-gold/30 transition-all duration-300 group hover:-translate-y-1 fade-up">
+          <div class="w-12 h-12 gold-gradient rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0F172A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg></div>
+          <h3 class="font-bold mb-1" data-i18n="deliverables.d4.title"></h3>
+          <p class="text-sm text-slate-400" data-i18n="deliverables.d4.desc"></p>
+        </div>
+        <div class="glass-card rounded-2xl p-6 hover:border-gold/30 transition-all duration-300 group hover:-translate-y-1 fade-up">
+          <div class="w-12 h-12 gold-gradient rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0F172A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div>
+          <h3 class="font-bold mb-1" data-i18n="deliverables.d5.title"></h3>
+          <p class="text-sm text-slate-400" data-i18n="deliverables.d5.desc"></p>
+        </div>
+        <div class="glass-card rounded-2xl p-6 hover:border-gold/30 transition-all duration-300 group hover:-translate-y-1 fade-up">
+          <div class="w-12 h-12 gold-gradient rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0F172A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg></div>
+          <h3 class="font-bold mb-1" data-i18n="deliverables.d6.title"></h3>
+          <p class="text-sm text-slate-400" data-i18n="deliverables.d6.desc"></p>
         </div>
       </div>
+    </div>
+  </section>
 
-      <!-- ÉTAPE 3 -->
-      <div class="process-detail-grid fade-in" style="margin-bottom:4rem;">
-        <div class="process-detail-visual" style="background: linear-gradient(135deg, #1E293B, #334155);">
-          <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;position:relative;z-index:2;">
-            <defs>
-              <linearGradient id="g4" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#FBBF24"/><stop offset="100%" stop-color="#F59E0B"/></linearGradient>
-              <linearGradient id="g5" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#F59E0B"/><stop offset="100%" stop-color="#D97706"/></linearGradient>
-              <linearGradient id="g6" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#D97706"/><stop offset="100%" stop-color="#B45309"/></linearGradient>
-            </defs>
-            <!-- 3D Wireframe Stand - Main structure -->
-            <!-- Top surface -->
-            <polygon points="200,40 280,70 200,100 120,70" fill="none" stroke="#F59E0B" stroke-width="2"/>
-            <!-- Left wall -->
-            <polygon points="120,70 200,100 200,200 120,170" fill="url(#g5)" fill-opacity="0.1" stroke="#F59E0B" stroke-width="1.5"/>
-            <!-- Right wall -->
-            <polygon points="200,100 280,70 280,170 200,200" fill="url(#g6)" fill-opacity="0.1" stroke="#F59E0B" stroke-width="1.5"/>
-            <!-- Back wall -->
-            <polygon points="120,70 280,70 280,170 120,170" fill="none" stroke="#F59E0B" stroke-width="1" stroke-dasharray="4,4"/>
-            <!-- Counter -->
-            <rect x="140" y="130" width="120" height="8" rx="1" fill="none" stroke="#F59E0B" stroke-width="1.5"/>
-            <line x1="140" y1="138" x2="140" y2="170" stroke="#F59E0B" stroke-width="1"/>
-            <line x1="260" y1="138" x2="260" y2="170" stroke="#F59E0B" stroke-width="1"/>
-            <!-- Dimension lines -->
-            <line x1="100" y1="70" x2="100" y2="170" stroke="#94A3B8" stroke-width="0.8" stroke-dasharray="3,3"/>
-            <line x1="95" y1="70" x2="105" y2="70" stroke="#94A3B8" stroke-width="1"/>
-            <line x1="95" y1="170" x2="105" y2="170" stroke="#94A3B8" stroke-width="1"/>
-            <text x="85" y="125" font-family="Inter,sans-serif" font-size="9" fill="#94A3B8" text-anchor="middle" transform="rotate(-90,85,125)">250cm</text>
-            <!-- Width dimension -->
-            <line x1="120" y1="210" x2="280" y2="210" stroke="#94A3B8" stroke-width="0.8" stroke-dasharray="3,3"/>
-            <line x1="120" y1="205" x2="120" y2="215" stroke="#94A3B8" stroke-width="1"/>
-            <line x1="280" y1="205" x2="280" y2="215" stroke="#94A3B8" stroke-width="1"/>
-            <text x="200" y="225" font-family="Inter,sans-serif" font-size="9" fill="#94A3B8" text-anchor="middle">300cm</text>
-            <!-- Vertex dots -->
-            <circle cx="200" cy="40" r="3" fill="#F59E0B"/>
-            <circle cx="280" cy="70" r="3" fill="#F59E0B"/>
-            <circle cx="120" cy="70" r="3" fill="#F59E0B"/>
-            <circle cx="200" cy="100" r="3" fill="#F59E0B"/>
-            <circle cx="200" cy="200" r="3" fill="#F59E0B"/>
-            <circle cx="120" cy="170" r="3" fill="#F59E0B"/>
-            <circle cx="280" cy="170" r="3" fill="#F59E0B"/>
-            <!-- Axis indicator -->
-            <line x1="320" y1="250" x2="360" y2="250" stroke="#EF4444" stroke-width="2"/>
-            <text x="365" y="253" font-family="Inter,sans-serif" font-size="9" fill="#EF4444">X</text>
-            <line x1="320" y1="250" x2="320" y2="210" stroke="#22C55E" stroke-width="2"/>
-            <text x="315" y="207" font-family="Inter,sans-serif" font-size="9" fill="#22C55E">Y</text>
-            <line x1="320" y1="250" x2="300" y2="270" stroke="#3B82F6" stroke-width="2"/>
-            <text x="292" y="278" font-family="Inter,sans-serif" font-size="9" fill="#3B82F6">Z</text>
-          </svg>
-        </div>
-        <div>
-          <div class="step-badge">Étape 03</div>
-          <h3 style="color:#fff; font-size:1.4rem; margin-bottom:1rem;">Modélisation 3D Complète</h3>
-          <p style="color:var(--gray-400); line-height:1.8; margin-bottom:1rem;">
-            L'ingénieur modélise votre stand en 3D avec une précision millimétrique. Chaque élément est reproduit : structure, menuiserie, métallerie, éclairage, signalétique, mobilier, équipements techniques.
-          </p>
-          <div class="service-features">
-            <div class="service-feature">
-              <div class="service-feature-check">&#10003;</div>
-              <span>Modélisation fidèle aux dimensions réelles</span>
-            </div>
-            <div class="service-feature">
-              <div class="service-feature-check">&#10003;</div>
-              <span>Matériaux avec textures réalistes</span>
-            </div>
-            <div class="service-feature">
-              <div class="service-feature-check">&#10003;</div>
-              <span>Éclairage & ambiance reconstitués</span>
-            </div>
-            <div class="service-feature">
-              <div class="service-feature-check">&#10003;</div>
-              <span>Vue 360° + vues multiples</span>
-            </div>
+  <!-- SECTION: PRICING NOTICE -->
+  <section class="py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="glass-card rounded-3xl p-10 sm:p-12 border-gold/20 fade-up max-w-4xl mx-auto" style="border: 1px solid rgba(245,158,11,0.2);">
+        <div class="flex flex-col sm:flex-row items-start gap-6">
+          <div class="w-16 h-16 gold-gradient rounded-2xl flex items-center justify-center flex-shrink-0">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0F172A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
           </div>
-        </div>
-      </div>
-
-      <!-- ÉTAPE 4 -->
-      <div class="process-detail-grid fade-in" style="margin-bottom:4rem; grid-template-columns: 1fr 1fr;">
-        <div style="order:1;">
-          <div class="step-badge">Étape 04</div>
-          <h3 style="color:#fff; font-size:1.4rem; margin-bottom:1rem;">Rendu Photoréaliste</h3>
-          <p style="color:var(--gray-400); line-height:1.8; margin-bottom:1rem;">
-            Calcul d'éclairage avancé, textures haute résolution, réflexions réalistes. Le rendu final est une image indiscernable d'une photographie. Vous recevez les fichiers haute définition pour validation.
-          </p>
-          <div class="service-features">
-            <div class="service-feature">
-              <div class="service-feature-check">&#10003;</div>
-              <span>Rendus haute résolution (4K+)</span>
-            </div>
-            <div class="service-feature">
-              <div class="service-feature-check">&#10003;</div>
-              <span>Vues extérieures & intérieures</span>
-            </div>
-            <div class="service-feature">
-              <div class="service-feature-check">&#10003;</div>
-              <span>Simulation éclairage jour & nuit</span>
-            </div>
-            <div class="service-feature">
-              <div class="service-feature-check">&#10003;</div>
-              <span>Fichiers livrés : PNG, JPG, PDF</span>
-            </div>
-          </div>
-        </div>
-        <div class="process-detail-visual" style="background: linear-gradient(135deg, #334155, #1E293B); order:2;">
-          <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;position:relative;z-index:2;">
-            <defs>
-              <linearGradient id="g7" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#FBBF24"/><stop offset="100%" stop-color="#F59E0B"/></linearGradient>
-              <linearGradient id="g8" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#8B5CF6"/><stop offset="100%" stop-color="#6D28D9"/></linearGradient>
-              <radialGradient id="light1" cx="50%" cy="30%"><stop offset="0%" stop-color="#F59E0B" stop-opacity="0.3"/><stop offset="100%" stop-color="transparent"/></radialGradient>
-            </defs>
-            <!-- Rendered kiosk - photorealistic style -->
-            <!-- Back wall -->
-            <rect x="80" y="50" width="240" height="140" rx="2" fill="#2C2C2C"/>
-            <!-- Wood texture lines -->
-            <line x1="80" y1="70" x2="320" y2="70" stroke="#3A3A3A" stroke-width="0.5"/>
-            <line x1="80" y1="90" x2="320" y2="90" stroke="#3A3A3A" stroke-width="0.5"/>
-            <line x1="80" y1="110" x2="320" y2="110" stroke="#3A3A3A" stroke-width="0.5"/>
-            <line x1="80" y1="130" x2="320" y2="130" stroke="#3A3A3A" stroke-width="0.5"/>
-            <line x1="80" y1="150" x2="320" y2="150" stroke="#3A3A3A" stroke-width="0.5"/>
-            <line x1="80" y1="170" x2="320" y2="170" stroke="#3A3A3A" stroke-width="0.5"/>
-            <!-- Counter top -->
-            <rect x="80" y="155" width="240" height="12" rx="1" fill="#1a1a1a"/>
-            <rect x="80" y="155" width="240" height="3" rx="1" fill="#F59E0B" opacity="0.6"/>
-            <!-- LED strip glow -->
-            <rect x="80" y="48" width="240" height="4" rx="2" fill="#F59E0B" opacity="0.8"/>
-            <rect x="80" y="46" width="240" height="8" rx="4" fill="#F59E0B" opacity="0.15"/>
-            <!-- Signage area -->
-            <rect x="120" y="55" width="160" height="35" rx="4" fill="#0F172A" stroke="#F59E0B" stroke-width="1.5"/>
-            <text x="200" y="77" font-family="Inter,sans-serif" font-size="14" fill="#F59E0B" text-anchor="middle" font-weight="800">CRAFTSTAND</text>
-            <!-- Light reflection -->
-            <rect x="100" y="60" width="80" height="25" rx="3" fill="url(#light1)"/>
-            <!-- Shelves -->
-            <rect x="90" y="100" width="100" height="4" rx="1" fill="#333"/>
-            <rect x="90" y="130" width="100" height="4" rx="1" fill="#333"/>
-            <!-- Products on shelf -->
-            <rect x="100" y="105" width="15" height="23" rx="2" fill="#F59E0B" opacity="0.4"/>
-            <rect x="120" y="110" width="12" height="18" rx="2" fill="#94A3B8" opacity="0.3"/>
-            <rect x="138" y="108" width="14" height="20" rx="2" fill="#F59E0B" opacity="0.3"/>
-            <!-- Camera -->
-            <circle cx="300" cy="58" r="6" fill="#1a1a1a" stroke="#555" stroke-width="1.5"/>
-            <circle cx="300" cy="58" r="2.5" fill="#EF4444"/>
-            <!-- Floor -->
-            <rect x="60" y="195" width="280" height="40" rx="2" fill="#1a1a1a"/>
-            <line x1="60" y1="215" x2="340" y2="215" stroke="#222" stroke-width="0.5"/>
-            <!-- Light rays -->
-            <line x1="200" y1="48" x2="160" y2="195" stroke="#F59E0B" stroke-width="0.3" opacity="0.3"/>
-            <line x1="200" y1="48" x2="200" y2="195" stroke="#F59E0B" stroke-width="0.3" opacity="0.4"/>
-            <line x1="200" y1="48" x2="240" y2="195" stroke="#F59E0B" stroke-width="0.3" opacity="0.3"/>
-          </svg>
-        </div>
-      </div>
-
-      <!-- ÉTAPE 5 -->
-      <div class="process-detail-grid fade-in">
-        <div class="process-detail-visual" style="background: linear-gradient(135deg, #1E293B, #334155);">
-          <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;position:relative;z-index:2;">
-            <!-- Blueprint paper -->
-            <rect x="40" y="30" width="160" height="120" rx="4" fill="#0a1628" stroke="#1E3A5F" stroke-width="1.5"/>
-            <text x="55" y="50" font-family="Inter,sans-serif" font-size="8" fill="#3B82F6" font-weight="700">PLAN 2D - COUPE A-A'</text>
-            <!-- Grid on blueprint -->
-            <line x1="40" y1="60" x2="200" y2="60" stroke="#1E3A5F" stroke-width="0.3"/>
-            <line x1="40" y1="80" x2="200" y2="80" stroke="#1E3A5F" stroke-width="0.3"/>
-            <line x1="40" y1="100" x2="200" y2="100" stroke="#1E3A5F" stroke-width="0.3"/>
-            <line x1="40" y1="120" x2="200" y2="120" stroke="#1E3A5F" stroke-width="0.3"/>
-            <line x1="80" y1="30" x2="80" y2="150" stroke="#1E3A5F" stroke-width="0.3"/>
-            <line x1="120" y1="30" x2="120" y2="150" stroke="#1E3A5F" stroke-width="0.3"/>
-            <line x1="160" y1="30" x2="160" y2="150" stroke="#1E3A5F" stroke-width="0.3"/>
-            <!-- Stand outline on blueprint -->
-            <rect x="60" y="65" width="120" height="70" rx="1" fill="none" stroke="#3B82F6" stroke-width="1.5"/>
-            <line x1="60" y1="100" x2="180" y2="100" stroke="#3B82F6" stroke-width="1"/>
-            <!-- Dimension arrows -->
-            <line x1="60" y1="145" x2="180" y2="145" stroke="#F59E0B" stroke-width="0.8"/>
-            <line x1="60" y1="140" x2="60" y2="150" stroke="#F59E0B" stroke-width="0.8"/>
-            <line x1="180" y1="140" x2="180" y2="150" stroke="#F59E0B" stroke-width="0.8"/>
-            <text x="120" y="155" font-family="Inter,sans-serif" font-size="7" fill="#F59E0B" text-anchor="middle">3000mm</text>
-            <!-- PDF Document -->
-            <rect x="220" y="30" width="140" height="110" rx="4" fill="#0F172A" stroke="#334155" stroke-width="1.5"/>
-            <rect x="230" y="38" width="30" height="12" rx="2" fill="#EF4444"/>
-            <text x="245" y="47" font-family="Inter,sans-serif" font-size="7" fill="white" text-anchor="middle" font-weight="700">PDF</text>
-            <text x="270" y="47" font-family="Inter,sans-serif" font-size="7" fill="#94A3B8">Nomenclature</text>
-            <line x1="230" y1="58" x2="350" y2="58" stroke="#334155" stroke-width="0.5"/>
-            <line x1="230" y1="68" x2="340" y2="68" stroke="#334155" stroke-width="0.5"/>
-            <line x1="230" y1="78" x2="330" y2="78" stroke="#334155" stroke-width="0.5"/>
-            <line x1="230" y1="88" x2="345" y2="88" stroke="#334155" stroke-width="0.5"/>
-            <line x1="230" y1="98" x2="320" y2="98" stroke="#334155" stroke-width="0.5"/>
-            <line x1="230" y1="108" x2="335" y2="108" stroke="#334155" stroke-width="0.5"/>
-            <line x1="230" y1="118" x2="310" y2="118" stroke="#334155" stroke-width="0.5"/>
-            <!-- Floor plan -->
-            <rect x="40" y="170" width="150" height="110" rx="4" fill="#0a1628" stroke="#1E3A5F" stroke-width="1.5"/>
-            <text x="55" y="188" font-family="Inter,sans-serif" font-size="8" fill="#22C55E" font-weight="700">IMPLANTATION AU SOL</text>
-            <!-- Room outline -->
-            <rect x="55" y="195" width="120" height="70" rx="1" fill="none" stroke="#22C55E" stroke-width="1" stroke-dasharray="4,2"/>
-            <!-- Stand position -->
-            <rect x="75" y="210" width="40" height="30" rx="1" fill="#F59E0B" fill-opacity="0.2" stroke="#F59E0B" stroke-width="1.5"/>
-            <text x="95" y="228" font-family="Inter,sans-serif" font-size="7" fill="#F59E0B" text-anchor="middle">STAND</text>
-            <!-- Arrow showing entrance -->
-            <line x1="55" y1="230" x2="75" y2="230" stroke="#94A3B8" stroke-width="1"/>
-            <polygon points="75,227 80,230 75,233" fill="#94A3B8"/>
-            <!-- Electrical diagram -->
-            <rect x="220" y="170" width="140" height="110" rx="4" fill="#0F172A" stroke="#334155" stroke-width="1.5"/>
-            <text x="235" y="188" font-family="Inter,sans-serif" font-size="8" fill="#F59E0B" font-weight="700">SCHÉMA ÉLECTRIQUE</text>
-            <!-- Circuit lines -->
-            <line x1="240" y1="200" x2="340" y2="200" stroke="#F59E0B" stroke-width="1"/>
-            <line x1="260" y1="200" x2="260" y2="220" stroke="#F59E0B" stroke-width="1"/>
-            <rect x="252" y="220" width="16" height="10" rx="1" fill="none" stroke="#F59E0B" stroke-width="1"/>
-            <line x1="300" y1="200" x2="300" y2="220" stroke="#F59E0B" stroke-width="1"/>
-            <rect x="292" y="220" width="16" height="10" rx="1" fill="none" stroke="#F59E0B" stroke-width="1"/>
-            <line x1="260" y1="230" x2="260" y2="250" stroke="#F59E0B" stroke-width="0.8"/>
-            <line x1="300" y1="230" x2="300" y2="250" stroke="#F59E0B" stroke-width="0.8"/>
-            <!-- Switch symbols -->
-            <circle cx="260" cy="252" r="4" fill="none" stroke="#F59E0B" stroke-width="1"/>
-            <circle cx="300" cy="252" r="4" fill="none" stroke="#F59E0B" stroke-width="1"/>
-            <text x="240" y="268" font-family="Inter,sans-serif" font-size="6" fill="#94A3B8">Prise</text>
-            <text x="285" y="268" font-family="Inter,sans-serif" font-size="6" fill="#94A3B8">Éclairage</text>
-          </svg>
-        </div>
-        <div>
-          <div class="step-badge">Étape 05</div>
-          <h3 style="color:#fff; font-size:1.4rem; margin-bottom:1rem;">Fichiers Techniques & Plans</h3>
-          <p style="color:var(--gray-400); line-height:1.8; margin-bottom:1rem;">
-            Au-delà du rendu visuel, notre ingénieur livre les fichiers techniques nécessaires à la fabrication : plans 2D cotés, plan d'implantation, nomenclature des matériaux, schéma des raccordements techniques.
-          </p>
-          <div class="service-features">
-            <div class="service-feature">
-              <div class="service-feature-check">&#10003;</div>
-              <span>Plans 2D DXF/PDF cotés</span>
-            </div>
-            <div class="service-feature">
-              <div class="service-feature-check">&#10003;</div>
-              <span>Plan d'implantation au sol</span>
-            </div>
-            <div class="service-feature">
-              <div class="service-feature-check">&#10003;</div>
-              <span>Nomenclature matériaux complète</span>
-            </div>
-            <div class="service-feature">
-              <div class="service-feature-check">&#10003;</div>
-              <span>Schéma technique (élec, plomberie)</span>
+          <div>
+            <h3 class="text-2xl font-black mb-3" data-i18n="pricing.title"></h3>
+            <p class="text-slate-400 leading-relaxed mb-4" data-i18n="pricing.desc"></p>
+            <div class="flex flex-wrap gap-3">
+              <span class="inline-flex items-center gap-2 bg-gold/10 border border-gold/20 rounded-full px-4 py-2 text-sm font-semibold text-gold">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                <span data-i18n="pricing.point1"></span>
+              </span>
+              <span class="inline-flex items-center gap-2 bg-gold/10 border border-gold/20 rounded-full px-4 py-2 text-sm font-semibold text-gold">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                <span data-i18n="pricing.point2"></span>
+              </span>
+              <span class="inline-flex items-center gap-2 bg-gold/10 border border-gold/20 rounded-full px-4 py-2 text-sm font-semibold text-gold">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                <span data-i18n="pricing.point3"></span>
+              </span>
             </div>
           </div>
         </div>
@@ -716,202 +375,397 @@
     </div>
   </section>
 
-  <!-- WHAT YOU RECEIVE -->
-  <section class="section">
-    <div class="container">
-      <div class="section-header fade-in">
-        <div class="section-badge">&#128230; Livrables</div>
-        <h2 class="section-title">Ce Que Vous <span style="color:#F59E0B;">Recevez</span></h2>
-        <p class="section-desc">Un dossier complet de création 3D contenant tous les éléments visuels et techniques pour la fabrication de votre stand.</p>
+  <!-- SECTION 4: FAQ -->
+  <section id="faq" class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-14 fade-up">
+        <div class="section-divider mx-auto mb-4"></div>
+        <h2 class="text-3xl sm:text-4xl font-black mb-3" data-i18n="faq.title"></h2>
+        <p class="text-slate-400 max-w-xl mx-auto" data-i18n="faq.subtitle"></p>
       </div>
-      <div class="deliverable-grid">
-        <div class="deliverable-card fade-in">
-          <div class="deliverable-icon">&#127912;</div>
-          <h3>Rendus 3D Photoréalistes</h3>
-          <p>Images haute résolution sous tous les angles. Vues extérieures, intérieures, détailées. Format PNG/JPG haute définition.</p>
-        </div>
-        <div class="deliverable-card fade-in">
-          <div class="deliverable-icon">&#128196;</div>
-          <h3>Plans 2D Techniques</h3>
-          <p>Plans cotés en DXF/PDF. Vue de dessus, élévations, détails de construction. Prêts pour l'atelier de fabrication.</p>
-        </div>
-        <div class="deliverable-card fade-in">
-          <div class="deliverable-icon">&#128221;</div>
-          <h3>Nomenclature</h3>
-          <p>Liste complète des matériaux, quantités, dimensions. Base de calcul pour le devis de fabrication détaillé.</p>
-        </div>
-        <div class="deliverable-card fade-in">
-          <div class="deliverable-icon">&#127919;</div>
-          <h3>Plan d'Implantation</h3>
-          <p>Vue de dessus montrant l'emplacement exact du stand dans le lieu, avec les raccordements techniques.</p>
-        </div>
-        <div class="deliverable-card fade-in">
-          <div class="deliverable-icon">&#9889;</div>
-          <h3>Schéma Technique</h3>
-          <p>Plan des installations électriques, plomberie, drainage, climatisation. Pour les équipes d'installation.</p>
-        </div>
-        <div class="deliverable-card fade-in">
-          <div class="deliverable-icon">&#128190;</div>
-          <h3>Fichiers Sources 3D</h3>
-          <p>Fichier 3D modifiable (selon offre). Permet les modifications futures et l'évolution du design.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- WATERMARK EXPLANATION -->
-  <section class="section section-alt">
-    <div class="container">
-      <div class="section-header fade-in">
-        <div class="section-badge">&#128249; Aperçu Gratuit</div>
-        <h2 class="section-title">Comment Fonctionne l'<span style="color:#F59E0B;">Aperçu Gratuit</span></h2>
-        <p class="section-desc">Avant de valider le service, vous pouvez visualiser un aperçu de nos capacités 3D. Voici la différence entre l'aperçu et le rendu final.</p>
-      </div>
-      <div class="process-detail-grid">
-        <div class="fade-in-left">
-          <div style="background: linear-gradient(135deg, #1E293B, #334155); border-radius:16px; padding:2.5rem; border:1px solid rgba(245,158,11,0.15);">
-            <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:1.5rem;">
-              <span style="padding:0.5rem 1rem; background:rgba(245,158,11,0.15); border-radius:50px; color:#F59E0B; font-size:0.8rem; font-weight:700;">APERÇU GRATUIT</span>
-            </div>
-            <h4 style="color:#fff; margin-bottom:1rem;">Aperçu avec Watermark</h4>
-            <ul style="color:var(--gray-400); font-size:0.9rem; line-height:2;">
-              <li>&#10003; Visualisation 3D interactive basique</li>
-              <li>&#10003; Rotation et zoom disponible</li>
-              <li>&#10007; <span style="color:#EF4444;">Watermark CRAFTSTAND.MA visible</span></li>
-              <li>&#10007; <span style="color:#EF4444;">Résolution limitée</span></li>
-              <li>&#10007; <span style="color:#EF4444;">Pas de fichiers téléchargeables</span></li>
-              <li>&#10007; <span style="color:#EF4444;">Pas de plans techniques</span></li>
-            </ul>
+      <div class="max-w-3xl mx-auto space-y-3">
+        <!-- FAQ 1 -->
+        <div class="glass-card rounded-2xl overflow-hidden fade-up">
+          <button class="faq-question w-full flex items-center justify-between p-6 text-left" onclick="toggleFaq(this)">
+            <span class="font-bold text-base pr-4" data-i18n="faq.q1"></span>
+            <svg class="faq-chevron w-5 h-5 text-gold flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer px-6 pb-6">
+            <p class="text-sm text-slate-400 leading-relaxed" data-i18n="faq.a1"></p>
           </div>
         </div>
-        <div class="fade-in-right">
-          <div style="background: linear-gradient(135deg, #1E293B, #334155); border-radius:16px; padding:2.5rem; border:2px solid rgba(245,158,11,0.4);">
-            <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:1.5rem;">
-              <span style="padding:0.5rem 1rem; background:linear-gradient(135deg,#F59E0B,#D97706); border-radius:50px; color:#0F172A; font-size:0.8rem; font-weight:700;">RENDU FINAL</span>
-            </div>
-            <h4 style="color:#fff; margin-bottom:1rem;">Rendu Professionnel Complet</h4>
-            <ul style="color:var(--gray-400); font-size:0.9rem; line-height:2;">
-              <li>&#10003; <span style="color:#22C55E;">Rendu photoréaliste haute résolution</span></li>
-              <li>&#10003; <span style="color:#22C55E;">Sans watermark, images propres</span></li>
-              <li>&#10003; <span style="color:#22C55E;">Vues multiples & angles variés</span></li>
-              <li>&#10003; <span style="color:#22C55E;">Fichiers PNG/JPG haute définition</span></li>
-              <li>&#10003; <span style="color:#22C55E;">Plans 2D DXF/PDF cotés</span></li>
-              <li>&#10003; <span style="color:#22C55E;">Nomenclature & schéma technique</span></li>
-            </ul>
+        <!-- FAQ 2 -->
+        <div class="glass-card rounded-2xl overflow-hidden fade-up">
+          <button class="faq-question w-full flex items-center justify-between p-6 text-left" onclick="toggleFaq(this)">
+            <span class="font-bold text-base pr-4" data-i18n="faq.q2"></span>
+            <svg class="faq-chevron w-5 h-5 text-gold flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer px-6 pb-6">
+            <p class="text-sm text-slate-400 leading-relaxed" data-i18n="faq.a2"></p>
+          </div>
+        </div>
+        <!-- FAQ 3 -->
+        <div class="glass-card rounded-2xl overflow-hidden fade-up">
+          <button class="faq-question w-full flex items-center justify-between p-6 text-left" onclick="toggleFaq(this)">
+            <span class="font-bold text-base pr-4" data-i18n="faq.q3"></span>
+            <svg class="faq-chevron w-5 h-5 text-gold flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer px-6 pb-6">
+            <p class="text-sm text-slate-400 leading-relaxed" data-i18n="faq.a3"></p>
+          </div>
+        </div>
+        <!-- FAQ 4 -->
+        <div class="glass-card rounded-2xl overflow-hidden fade-up">
+          <button class="faq-question w-full flex items-center justify-between p-6 text-left" onclick="toggleFaq(this)">
+            <span class="font-bold text-base pr-4" data-i18n="faq.q4"></span>
+            <svg class="faq-chevron w-5 h-5 text-gold flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer px-6 pb-6">
+            <p class="text-sm text-slate-400 leading-relaxed" data-i18n="faq.a4"></p>
+          </div>
+        </div>
+        <!-- FAQ 5 -->
+        <div class="glass-card rounded-2xl overflow-hidden fade-up">
+          <button class="faq-question w-full flex items-center justify-between p-6 text-left" onclick="toggleFaq(this)">
+            <span class="font-bold text-base pr-4" data-i18n="faq.q5"></span>
+            <svg class="faq-chevron w-5 h-5 text-gold flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-answer px-6 pb-6">
+            <p class="text-sm text-slate-400 leading-relaxed" data-i18n="faq.a5"></p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- FAQ -->
-  <section class="section">
-    <div class="container">
-      <div class="section-header fade-in">
-        <div class="section-badge">&#10067; Questions Fréquentes</div>
-        <h2 class="section-title">FAQ Création <span style="color:#F59E0B;">3D</span></h2>
-      </div>
-      <div style="max-width:800px; margin:0 auto;">
-        <div class="faq-item fade-in">
-          <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">Combien de temps prend la création 3D ?</div>
-          <div class="faq-answer"><div class="faq-answer-inner">La création 3D complète prend en moyenne 5 à 10 jours ouvrés selon la complexité du projet. Les projets simples (kiosque standard) peuvent être livrés en 5 jours. Les projets complexes (stand salon, multi-niveaux) peuvent prendre jusqu'à 15 jours.</div></div>
+  <!-- SECTION 5: CTA -->
+  <section id="cta" class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="glass-card rounded-3xl p-10 sm:p-14 text-center cta-glow fade-up">
+        <div class="inline-flex items-center gap-2 bg-gold/10 border border-gold/20 rounded-full px-4 py-1.5 mb-6">
+          <span class="w-2 h-2 bg-gold rounded-full animate-pulse"></span>
+          <span class="text-gold text-xs font-semibold tracking-wide uppercase" data-i18n="cta.badge"></span>
         </div>
-        <div class="faq-item fade-in">
-          <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">Puis-je demander des modifications après le rendu ?</div>
-          <div class="faq-answer"><div class="faq-answer-inner">Oui, des modifications sont possibles à chaque étape. Le nombre de modifications incluses dépend de votre demande. Contactez-nous pour discuter de vos besoins spécifiques.</div></div>
-        </div>
-        <div class="faq-item fade-in">
-          <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">Quels fichiers recevrai-je à la livraison ?</div>
-          <div class="faq-answer"><div class="faq-answer-inner">Vous recevez : rendus 3D en PNG et JPG haute résolution, plans 2D en DXF et PDF, nomenclature en Excel/PDF, et le schéma technique. Selon votre demande, le fichier source 3D modifiable peut également être inclus.</div></div>
-        </div>
-        <div class="faq-item fade-in">
-          <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">La consultation est-elle vraiment gratuite ?</div>
-          <div class="faq-answer"><div class="faq-answer-inner">Oui, la consultation et le rendez-vous sont gratuits à Rabat et Salé. Pour les déplacements hors Rabat (Casablanca, Tanger, Marrakech, etc.), des frais de déplacement sont applicables selon la distance.</div></div>
-        </div>
-        <div class="faq-item fade-in">
-          <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">Intervenez-vous dans tout le Maroc ?</div>
-          <div class="faq-answer"><div class="faq-answer-inner">Oui, CraftStand.ma intervient dans toutes les villes du Maroc : Rabat, Salé, Casablanca, Tanger, Marrakech, Fès, Meknès, Agadir, Tétouan, Oujda, Kenitra et toutes les autres villes. Notre siège est à Rabat.</div></div>
-        </div>
-        <div class="faq-item fade-in">
-          <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">Faut-il un plan pour démarrer la création 3D ?</div>
-          <div class="faq-answer"><div class="faq-answer-inner">Non, aucun plan n'est nécessaire. Notre ingénieur crée le design à partir de vos idées, photos, croquis ou simple description. Si vous avez un plan existant, nous pouvons leNumberFormatException et le transformer en 3D.</div></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="section section-alt">
-    <div class="container">
-      <div class="cta-banner fade-in">
-        <div class="cta-content">
-          <h2>Prêt à Visualiser Votre Stand en 3D&nbsp;?</h2>
-          <p>Contactez-nous pour une consultation gratuite à Rabat. Notre ingénieur étudiera votre projet et créera des rendus 3D fidèles à votre vision.</p>
-        </div>
-        <div class="cta-actions">
-          <a href="contact.html" class="btn btn-gold btn-lg">Consultation Gratuite</a>
-          <a href="https://wa.me/212663558868" target="_blank" class="btn btn-green btn-lg">&#128172; WhatsApp</a>
+        <h2 class="text-3xl sm:text-4xl font-black mb-4" data-i18n="cta.title"></h2>
+        <p class="text-slate-400 max-w-lg mx-auto mb-8" data-i18n="cta.subtitle"></p>
+        <div class="flex flex-wrap gap-4 justify-center">
+          <a href="contact.html" class="gold-gradient text-dark font-bold px-8 py-4 rounded-xl hover:opacity-90 transition shadow-lg shadow-gold/25 flex items-center gap-2 text-lg">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H4a2 2 0 00-2 2v10a2 2 0 002 2h4l4 4v-4h2a2 2 0 002-2V4a2 2 0 00-2-2z"/></svg>
+            <span data-i18n="cta.cta1"></span>
+          </a>
+          <a href="https://wa.me/212663558868" target="_blank" class="border-2 border-green-500/50 text-green-400 font-bold px-8 py-4 rounded-xl hover:bg-green-500/10 transition flex items-center gap-2 text-lg backdrop-blur-sm">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            WhatsApp
+          </a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer class="footer">
-    <div class="footer-grid">
-      <div class="footer-brand">
-      <a href="index.html" class="logo-link"><img src="img/logo.svg" alt="CraftStand.ma - Design 3D & Fabrication Sur-Mesure" class="logo-img"></a>
-        <p>Conception 3D, Fabrication & Agencement Sur-Mesure de Stands et Kiosques au Maroc.</p>
-        <div class="footer-social">
-          <a href="https://wa.me/212663558868" target="_blank" title="WhatsApp">&#128172;</a>
-          <a href="tel:+212663558868" title="Téléphone">&#9742;</a>
-        </div>
+  <footer class="border-t border-white/5 py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-2">
+        <svg viewBox="0 0 80 80" width="24" height="24"><polygon points="40,8 62,20 40,32 18,20" fill="#F59E0B"/><polygon points="18,20 40,32 40,60 18,48" fill="#F59E0B"/><polygon points="40,32 62,20 62,48 40,60" fill="#D97706"/></svg>
+        <span class="font-bold text-sm">CraftStand.ma</span>
       </div>
-      <div class="footer-col">
-        <h4>Navigation</h4>
-        <ul>
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="creation-3d.html">Création 3D</a></li>
-          <li><a href="contact.html">Rendez-vous</a></li>
-        </ul>
+      <p class="text-xs text-slate-500">&copy; 2026 CraftStand.ma. <span data-i18n="footer.rights"></span></p>
+      <div class="flex gap-4 text-slate-500">
+        <a href="tel:+212663558868" class="hover:text-gold transition"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></a>
+        <a href="https://wa.me/212663558868" target="_blank" class="hover:text-gold transition"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></a>
       </div>
-      <div class="footer-col">
-        <h4>Services</h4>
-        <ul>
-          <li><a href="services.html#street-food">Kiosques Street Food</a></li>
-          <li><a href="services.html#mall">Pop-Up Stores & Malls</a></li>
-          <li><a href="services.html#exhibition">Exhibition Booths</a></li>
-          <li><a href="creation-3d.html">Création 3D</a></li>
-          <li><a href="contact.html">Demander un Devis</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Contact</h4>
-        <div class="footer-contact-item">
-          <span class="footer-contact-icon">&#128205;</span>
-          <span>Rabat, Maroc</span>
-        </div>
-        <div class="footer-contact-item">
-          <span class="footer-contact-icon">&#9742;</span>
-          <a href="tel:+212663558868">0663-558868</a>
-        </div>
-        <div class="footer-contact-item">
-          <span class="footer-contact-icon">&#128172;</span>
-          <a href="https://wa.me/212663558868" target="_blank">WhatsApp Direct</a>
-        </div>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>&copy; 2026 CraftStand.ma. Tous droits réservés.</span>
-      <span>Rabat, Maroc | Création 3D & Fabrication Sur-Mesure</span>
     </div>
   </footer>
 
-  <!-- WHATSAPP FLOAT -->
-  <a href="https://wa.me/212663558868" target="_blank" class="whatsapp-float" title="Contactez-nous sur WhatsApp">&#128172;</a>
+  <!-- ========== JAVASCRIPT ========== -->
+  <script>
+  // ===== i18n TRANSLATIONS =====
+  const translations = {
+    en: {
+      'header.subtitle': 'DESIGN 3D & FABRICATION SUR-MESURE',
+      'nav.home': 'Home', 'nav.services': 'Services', 'nav.portfolio': 'Portfolio', 'nav.contact': 'Contact', 'nav.creation3d': 'Création 3D', 'nav.cta': 'Get Quote',
+      'hero.badge': '3D Design Specialists',
+      'hero.title': 'Visualize Your Stand <span class="gold-text">Before It Exists</span>',
+      'hero.subtitle': 'Photorealistic 3D rendering for exhibition stands. See every detail before fabrication begins. Save time, reduce costs, and impress your clients.',
+      'hero.cta2': 'Request a Quote',
+      // Intro
+      'intro.title': 'Why 3D Visualization Matters',
+      'intro.p1': 'A photorealistic 3D render eliminates guesswork. You see exactly how your exhibition stand will look, feel, and function — before a single piece of wood or metal is cut.',
+      'intro.p2': 'Our 3D design service gives you a clear, compelling preview of your stand from every angle, with accurate materials, lighting, and branding — so you approve with confidence.',
+      'intro.benefit1.title': 'Zero Surprises',
+      'intro.benefit1.desc': 'See the final result before production starts.',
+      'intro.benefit2.title': 'Save Money',
+      'intro.benefit2.desc': 'Avoid costly mid-production changes.',
+      'intro.benefit3.title': 'Fast Turnaround',
+      'intro.benefit3.desc': 'Renders delivered in 3-5 business days.',
+      // Process
+      'process.title': 'Our 3D Design Process',
+      'process.subtitle': 'A streamlined 5-step workflow from initial brief to final approval.',
+      'process.s1.title': 'Consultation & Briefing',
+      'process.s1.desc': 'We gather your vision, dimensions, branding, budget, and exhibition requirements. Every detail matters.',
+      'process.s2.title': '3D Modeling',
+      'process.s2.desc': 'Our designers build a precise 3D model of your stand using industry-leading software (SketchUp, 3ds Max, Blender).',
+      'process.s3.title': 'Texture & Materials',
+      'process.s3.desc': 'We apply realistic textures, materials, colors, and lighting to match your brand identity and desired ambiance.',
+      'process.s4.title': 'Client Review & Revisions',
+      'process.s4.desc': 'You review the 3D renders, request changes, and we refine until you are 100% satisfied.',
+      'process.s5.title': 'Final Render & Approval',
+      'process.s5.desc': 'High-resolution final renders from multiple angles, ready for your approval and our production team.',
+      // Deliverables
+      'deliverables.title': "What's Included",
+      'deliverables.subtitle': 'Everything you receive with your 3D design package.',
+      'deliverables.d1.title': 'High-Res Renders',
+      'deliverables.d1.desc': 'Multiple photorealistic images from various angles (front, perspective, bird\'s eye).',
+      'deliverables.d2.title': 'Technical Drawings',
+      'deliverables.d2.desc': 'Floor plans, elevations, and dimensions for the fabrication team.',
+      'deliverables.d3.title': '3D Walkthrough Video',
+      'deliverables.d3.desc': 'A short animated video tour of your stand for stakeholder presentations.',
+      'deliverables.d4.title': '2 Revision Rounds',
+      'deliverables.d4.desc': 'Two rounds of modifications included to get the design exactly right.',
+      'deliverables.d5.title': 'Material Legend',
+      'deliverables.d5.desc': 'Detailed list of materials, finishes, and color references for production.',
+      'deliverables.d6.title': 'Source Files',
+      'deliverables.d6.desc': 'Editable 3D model files delivered with the final package.',
+      // Pricing
+      'pricing.title': '3D Creation — Paid Service',
+      'pricing.desc': 'Our 3D visualization service is a professional paid service. Pricing depends on the complexity of your stand, number of angles, and level of detail required. Contact us for a personalized quote.',
+      'pricing.point1': 'Custom pricing per project',
+      'pricing.point2': '2 revision rounds included',
+      'pricing.point3': 'Free consultation at Rabat HQ',
+      // FAQ
+      'faq.title': 'Frequently Asked Questions',
+      'faq.subtitle': 'Everything you need to know about our 3D design service.',
+      'faq.q1': 'How long does a 3D design project take?',
+      'faq.a1': 'Typically 3-5 business days from brief to first draft. Revisions add 1-2 days each. Complex projects with multiple angles or detailed interiors may take up to 7 days.',
+      'faq.q2': 'What file formats do you deliver?',
+      'faq.a2': 'We deliver high-resolution PNG/JPEG renders, PDF technical drawings, and MP4 walkthrough videos. Source files (SKP, MAX, or Blend) are available upon request.',
+      'faq.q3': 'Can I use the 3D renders for marketing before the stand is built?',
+      'faq.a3': 'Absolutely. Our photorealistic renders are designed to be presentation-ready. Many clients use them in sponsor decks, trade show catalogs, and social media campaigns.',
+      'faq.q4': 'What if I need changes after the first draft?',
+      'faq.a4': 'Your package includes two rounds of revisions. Additional rounds are available at a flat fee. We work closely with you to ensure the final design matches your vision.',
+      'faq.q5': 'Do you design for specific exhibition venues?',
+      'faq.a5': 'Yes. We build to exact venue specifications including booth dimensions, fire regulations, power access points, and local compliance rules for all major Moroccan exhibition halls.',
+      // CTA
+      'cta.badge': 'Ready to Start?',
+      'cta.title': 'Ready to See Your Stand in 3D?',
+      'cta.subtitle': 'Get a photorealistic preview of your exhibition stand before fabrication. Fast turnaround, unlimited revisions until approved.',
+      'cta.cta1': 'Start Your Project',
+      // Footer
+      'footer.rights': 'All rights reserved.',
+    },
+    fr: {
+      'header.subtitle': 'DESIGN 3D & FABRICATION SUR-MESURE',
+      'nav.home': 'Accueil', 'nav.services': 'Services', 'nav.portfolio': 'Portfolio', 'nav.contact': 'Contact', 'nav.creation3d': 'Création 3D', 'nav.cta': 'Demander un Devis',
+      'hero.badge': 'Spécialistes Design 3D',
+      'hero.title': 'Visualisez Votre Stand <span class="gold-text">Avant Son Existence</span>',
+      'hero.subtitle': 'Rendu 3D photoréaliste pour stands d\'exposition. Voyez chaque détail avant le début de la fabrication. Économisez du temps et impressionnez vos clients.',
+      'hero.cta2': 'Demander un Devis',
+      // Intro
+      'intro.title': 'Pourquoi la Visualisation 3D Compte',
+      'intro.p1': 'Un rendu 3D photoréaliste élimine les devinettes. Vous voyez exactement comment votre stand d\'exposition sera, ressemblera et fonctionnera — avant qu\'un seul morceau de bois ou de métal ne soit découpé.',
+      'intro.p2': 'Notre service de design 3D vous offre un aperçu clair et convaincant de votre stand sous tous les angles, avec des matériaux, un éclairage et un branding précis — pour que vous puissiez approuver en toute confiance.',
+      'intro.benefit1.title': 'Aucune Surprise',
+      'intro.benefit1.desc': 'Voyez le résultat final avant le début de la production.',
+      'intro.benefit2.title': 'Économisez',
+      'intro.benefit2.desc': 'Évitez les changements coûteux en cours de production.',
+      'intro.benefit3.title': 'Délai Rapide',
+      'intro.benefit3.desc': 'Rendus livrés en 3 à 5 jours ouvrables.',
+      // Process
+      'process.title': 'Notre Processus de Design 3D',
+      'process.subtitle': 'Un flux de travail en 5 étapes du brief initial à l\'approbation finale.',
+      'process.s1.title': 'Consultation & Brief',
+      'process.s1.desc': 'Nous recueillons votre vision, dimensions, branding, budget et exigences de l\'exposition. Chaque détail compte.',
+      'process.s2.title': 'Modélisation 3D',
+      'process.s2.desc': 'Nos designers construisent un modèle 3D précis de votre stand avec les meilleurs logiciels du marché (SketchUp, 3ds Max, Blender).',
+      'process.s3.title': 'Textures & Matériaux',
+      'process.s3.desc': 'Nous appliquons des textures réalistes, matériaux, couleurs et éclairage pour refléter votre identité de marque.',
+      'process.s4.title': 'Revue Client & Révisions',
+      'process.s4.desc': 'Vous examinez les rendus 3D, demandez des modifications, et nous affinons jusqu\'à votre entière satisfaction.',
+      'process.s5.title': 'Rendu Final & Approbation',
+      'process.s5.desc': 'Rendus finaux haute résolution sous plusieurs angles, prêts pour votre approbation et notre équipe de production.',
+      // Deliverables
+      'deliverables.title': 'Ce Qui Est Inclus',
+      'deliverables.subtitle': 'Tout ce que vous recevez avec votre pack de design 3D.',
+      'deliverables.d1.title': 'Rendus Haute Résolution',
+      'deliverables.d1.desc': 'Plusieurs images photoréalistes sous divers angles (vue frontale, perspective, vue aérienne).',
+      'deliverables.d2.title': 'Plans Techniques',
+      'deliverables.d2.desc': 'Plans de sol, élévations et dimensions pour l\'équipe de fabrication.',
+      'deliverables.d3.title': 'Vidéo de Visite 3D',
+      'deliverables.d3.desc': 'Une courte vidéo animée de visite virtuelle de votre stand pour les présentations.',
+      'deliverables.d4.title': '2 Tours de Révision',
+      'deliverables.d4.desc': 'Deux tours de modifications inclus pour obtenir le design parfait.',
+      'deliverables.d5.title': 'Légende des Matériaux',
+      'deliverables.d5.desc': 'Liste détaillée des matériaux, finitions et références couleur pour la production.',
+      'deliverables.d6.title': 'Fichiers Sources',
+      'deliverables.d6.desc': 'Fichiers du modèle 3D éditables livrés avec le pack final.',
+      // Pricing
+      'pricing.title': 'Création 3D — Service Payant',
+      'pricing.desc': 'Notre service de visualisation 3D est un service professionnel payant. Le tarif dépend de la complexité de votre stand, du nombre d\'angles et du niveau de détail requis. Contactez-nous pour un devis personnalisé.',
+      'pricing.point1': 'Tarification sur mesure',
+      'pricing.point2': '2 tours de révision inclus',
+      'pricing.point3': 'Consultation gratuite au siège de Rabat',
+      // FAQ
+      'faq.title': 'Questions Fréquentes',
+      'faq.subtitle': 'Tout ce que vous devez savoir sur notre service de design 3D.',
+      'faq.q1': 'Combien de temps dure un projet de design 3D ?',
+      'faq.a1': 'En général 3 à 5 jours ouvrables du brief à la première ébauche. Les révisions ajoutent 1 à 2 jours chacune. Les projets complexes peuvent prendre jusqu\'à 7 jours.',
+      'faq.q2': 'Quels formats de fichiers livrez-vous ?',
+      'faq.a2': 'Nous livrons des rendus haute résolution PNG/JPEG, des plans techniques PDF et des vidéos MP4. Les fichiers sources (SKP, MAX, Blend) sont disponibles sur demande.',
+      'faq.q3': 'Puis-je utiliser les rendus pour du marketing avant la construction du stand ?',
+      'faq.a3': 'Absolument. Nos rendus photoréalistes sont conçus pour être directement présentables. De nombreux clients les utilisent dans des dossiers sponsors, catalogues d\'exposition et campagnes réseaux sociaux.',
+      'faq.q4': 'Que se passe-t-il si j\'ai besoin de modifications après la première ébauche ?',
+      'faq.a4': 'Votre pack inclut deux tours de révisions. Des tours supplémentaires sont disponibles à frais fixes. Nous travaillons étroitement avec vous pour que le design final corresponde à votre vision.',
+      'faq.q5': 'Concevez-vous pour des salles d\'exposition spécifiques ?',
+      'faq.a5': 'Oui. Nous concevons selon les spécifications exactes des salles : dimensions de stand, normes incendie, accès électriques et conformité locale pour toutes les grandes salles d\'exposition marocaines.',
+      // CTA
+      'cta.badge': 'Prêt à Commencer ?',
+      'cta.title': 'Prêt à Voir Votre Stand en 3D ?',
+      'cta.subtitle': 'Obtenez un aperçu photoréaliste de votre stand avant la fabrication. Délai rapide, révisions illimitées jusqu\'à approbation.',
+      'cta.cta1': 'Lancer Votre Projet',
+      // Footer
+      'footer.rights': 'Tous droits réservés.',
+    },
+    ar: {
+      'header.subtitle': 'تصميم ثلاثي الأبعاد وتصنيع حسب الطلب',
+      'nav.home': 'الرئيسية', 'nav.services': 'الخدمات', 'nav.portfolio': 'أعمالنا', 'nav.contact': 'اتصل بنا', 'nav.creation3d': 'إنشاء ثلاثي الأبعاد', 'nav.cta': 'احصل على عرض سعر',
+      'hero.badge': 'متخصصون في التصميم ثلاثي الأبعاد',
+      'hero.title': 'تصور كشكك <span class="gold-text">قبل وجوده</span>',
+      'hero.subtitle': 'تصور واقعي ثلاثي الأبعاد لأكشاك المعارض. شاهد كل تفصيلة قبل بدء التصنيع. وفر الوقت وان impressed عملاءك.',
+      'hero.cta2': 'طلب عرض سعر',
+      // Intro
+      'intro.title': 'لماذا التصور ثلاثي الأبعاد مهم',
+      'intro.p1': 'التقديم الواقعي ثلاثي الأبعاد يزيل التخمين. ترى بالضبط كيف سيبدو كشك المعرض ويعمل — قبل قطع قطعة واحدة من الخشب أو المعدن.',
+      'intro.p2': 'خدمة التصميم ثلاثي الأبعاد تمنحك معاينة واضحة ومقنعة لكشكك من كل زاوية، مع مواد وإضاءة وعلامة تجارية دقيقة — لتوافق بثقة.',
+      'intro.benefit1.title': 'بدون مفاجآت',
+      'intro.benefit1.desc': 'شاهد النتيجة النهائية قبل بدء الإنتاج.',
+      'intro.benefit2.title': 'وفر المال',
+      'intro.benefit2.desc': 'تجنب التغييرات المكلفة أثناء الإنتاج.',
+      'intro.benefit3.title': 'سرعة في التنفيذ',
+      'intro.benefit3.desc': 'تصاميم جاهزة خلال 3-5 أيام عمل.',
+      // Process
+      'process.title': 'عملية التصميم ثلاثي الأبعاد',
+      'process.subtitle': 'مسار عمل مُبسّط من 5 خطوات من الموجز الأولي إلى الموافقة النهائية.',
+      'process.s1.title': 'الاستشارة والموجز',
+      'process.s1.desc': 'نجمع رؤيتك، الأبعاد، العلامة التجارية، الميزانية ومتطلبات المعرض. كل تفصيلة مهمة.',
+      'process.s2.title': 'النمذجة ثلاثية الأبعاد',
+      'process.s2.desc': 'يقوم المصممون ببناء نموذج ثلاثي الأبعاد دقيق لكشكك باستخدام أفضل البرامج (SketchUp, 3ds Max, Blender).',
+      'process.s3.title': 'الملمس والمواد',
+      'process.s3.desc': 'نطبق ملمس واقعي ومواد وألوان وإضاءة تعكس هوية علامتك التجارية المطلوبة.',
+      'process.s4.title': 'مراجعة العميل والتعديلات',
+      'process.s4.desc': 'تمارس مراجعة التصاميم ثلاثية الأبعاد وتطلب التعديلات، ونطور حتى تكون راضياً 100%.',
+      'process.s5.title': 'التصميم النهائي والموافقة',
+      'process.s5.desc': 'تصاميم نهائية عالية الدقة من زوايا متعددة، جاهزة لموافقتك وفريق الإنتاج.',
+      // Deliverables
+      'deliverables.title': 'ما هو م INCLUDED',
+      'deliverables.subtitle': 'كل ما تتلقاه مع حزمة التصميم ثلاثي الأبعاد.',
+      'deliverables.d1.title': 'تصاميم عالية الدقة',
+      'deliverables.d1.desc': 'صور واقعية من زوايا مختلفة (أمامية، منظور، علوية).',
+      'deliverables.d2.title': 'رسومات تقنية',
+      'deliverables.d2.desc': 'مخططات أرضية و elevations وأبعاد لفريق التصنيع.',
+      'deliverables.d3.title': 'فيديو جولة ثلاثية الأبعاد',
+      'deliverables.d3.desc': 'فيديو متحرك قصير لجولة افتراضية في كشكك لعروض تقديمية.',
+      'deliverables.d4.title': 'جولتان من التعديلات',
+      'deliverables.d4.desc': 'جولتان من التعديلات مشمولة للحصول على التصميم المثالي.',
+      'deliverables.d5.title': 'دليل المواد',
+      'deliverables.d5.desc': 'قائمة مفصلة بالمواد والتشطيبات والمراجع اللونية للإنتاج.',
+      'deliverables.d6.title': 'ملفات المصدر',
+      'deliverables.d6.desc': 'ملفات نموذج ثلاثي الأبعاد قابلة للتعديل مع الحزمة النهائية.',
+      // Pricing
+      'pricing.title': 'إنشاء ثلاثي الأبعاد — خدمة مدفوعة',
+      'pricing.desc': 'خدمة التصوير ثلاثي الأبعاد هي خدمة احترافية مدفوعة. يعتمد السعر على تعقيد الكشك وعدد الزوايا ومستوى التفاصيل المطلوب. اتصل بنا لعرض سعر شخصي.',
+      'pricing.point1': 'تسعير حسب المشروع',
+      'pricing.point2': 'جولتان من المراجعات مشمولة',
+      'pricing.point3': 'استشارة مجانية بمقر الرباط',
+      // FAQ
+      'faq.title': 'الأسئلة الشائعة',
+      'faq.subtitle': 'كل ما تحتاج معرفته عن خدمة التصميم ثلاثي الأبعاد.',
+      'faq.q1': 'كم يستغرق مشروع التصميم ثلاثي الأبعاد؟',
+      'faq.a1': 'عادة 3-5 أيام عمل من الموجز إلى المسودة الأولى. الإضافات تضيف 1-2 يوم لكل جولة. المشاريع المعقدة قد تستغرق حتى 7 أيام.',
+      'faq.q2': 'ما هي صيغ الملفات التي تقدمونها؟',
+      'faq.a2': 'نقدم تصاميم عالية الدقة PNG/JPEG، ورسومات تقنية PDF، وفيديو MP4. ملفات المصدر متاحة عند الطلب.',
+      'faq.q3': 'هل يمكنني استخدام التصاميم للتسويق قبل بناء الكشك؟',
+      'faq.a3': 'بالتأكيد. تصاميمنا الواقعية مصممة لتكون جاهزة للعرض. كثير من العملاء يستخدمونها في عروض الرعاة ومجلات المعارض وحملات وسائل التواصل الاجتماعي.',
+      'faq.q4': 'ماذا يحدث إذا احتجت تعديلات بعد المسودة الأولى؟',
+      'faq.a4': 'حزمتك تشمل جولتين من التعديلات. جولات إضافية متاحة برسوم ثابتة. نعمل بعمق معك لضمان أن التصميم النهائي يطابق رؤيتك.',
+      'faq.q5': 'هل تصممون لقاعات معرض محددة؟',
+      'faq.a5': 'نعم. نصمم وفقاً المواصفات الدقيقة للقاعة بما في ذلك أبعاد الكشك، لوائح الحريق، نقاط الوصول الكهربائي والامتثال المحلي لجميع القاعات المغربية الكبرى.',
+      // CTA
+      'cta.badge': 'مستعد للبدء؟',
+      'cta.title': 'هل أنت مستعد لرؤية كشكك في ثلاثي الأبعاد؟',
+      'cta.subtitle': 'احصل على معاينة واقعية لكشكك قبل التصنيع. تنفيذ سريع، تعديلات غير محدودة حتى الموافقة.',
+      'cta.cta1': 'ابدأ مشروعك',
+      // Footer
+      'footer.rights': 'جميع الحقوق محفوظة.',
+    }
+  };
 
-  <script src="js/main.js"></script>
+  let currentLang = 'fr';
+
+  function setLang(lang) {
+    currentLang = lang;
+    const isRTL = lang === 'ar';
+    document.documentElement.lang = lang;
+    document.documentElement.dir = isRTL ? 'rtl' : 'ltr';
+    document.body.dir = isRTL ? 'rtl' : 'ltr';
+    document.body.className = isRTL ? 'font-cairo' : 'font-inter';
+
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      if (translations[lang] && translations[lang][key]) {
+        el.innerHTML = translations[lang][key];
+      }
+    });
+
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+      if (btn.dataset.lang === lang) {
+        btn.classList.add('bg-gold', 'text-dark');
+        btn.classList.remove('text-slate-400', 'hover:text-gold');
+      } else {
+        btn.classList.remove('bg-gold', 'text-dark');
+        btn.classList.add('text-slate-400', 'hover:text-gold');
+      }
+    });
+  }
+
+  // ===== MOBILE NAV =====
+  function toggleMobileNav() {
+    document.getElementById('mobileNav').classList.toggle('hidden');
+  }
+
+  // ===== FAQ ACCORDION =====
+  function toggleFaq(btn) {
+    const answer = btn.nextElementSibling;
+    const chevron = btn.querySelector('.faq-chevron');
+    const isOpen = answer.classList.contains('open');
+
+    // Close all other FAQs
+    document.querySelectorAll('.faq-answer').forEach(a => a.classList.remove('open'));
+    document.querySelectorAll('.faq-chevron').forEach(c => c.classList.remove('open'));
+
+    // Toggle current
+    if (!isOpen) {
+      answer.classList.add('open');
+      chevron.classList.add('open');
+    }
+  }
+
+  // ===== SCROLL ANIMATIONS =====
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+  }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+  // ===== TOAST =====
+  function showToast(msg) {
+    const t = document.getElementById('toast');
+    if (!t) return;
+    t.textContent = msg;
+    t.classList.add('show');
+    setTimeout(() => t.classList.remove('show'), 3000);
+  }
+
+  // ===== INIT =====
+  setLang('fr');
+  </script>
 </body>
 </html>
